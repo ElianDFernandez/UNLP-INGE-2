@@ -1,5 +1,16 @@
-# Repositorio de documentacion del proyecto de ING-2
+<div align="center">
+  <img src="./Assets/Logo.png" alt="Logo de Syncro" width="200"/>
+  
+  # Repositorio de Documentación del Proyecto de ING-2
+  
+  <strong>EQUIPO SYNCRO</strong>
+</div>
 
-**Equipo SYNCRO**
-Valentín, Elian, Isabella, Vladimir y Sebastián
+<br>
 
+#### 👥 Integrantes:
+- Valentín
+- Elian
+- Isabella
+- Vladimir
+- Sebastián
