@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./Assets/Logo.png" alt="Logo de Syncro" width="200"/>
+  <img src="./Assets/Logo.png" alt="Logo de Syncro" width="400/>
   
   # Repositorio de Documentación del Proyecto de ING-2
   
