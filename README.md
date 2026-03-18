@@ -8,9 +8,6 @@
     <img src="https://img.shields.io/badge/Documentación-Activa-orange?style=flat-square" alt="Docs">
   </p>
 </div>
-<div align="center">
-  <img src="https://placehold.co/1000x4/1A8DDE/1A8DDE.png" width="100%"height="4" alt="Borde Azul">
-</div>
 <table align="center" width="100%" style="border: none;">
   <tr>
     <td align="center" width="50%" valign="top">
