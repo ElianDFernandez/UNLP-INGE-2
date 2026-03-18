@@ -1,33 +1,26 @@
 <div align="center">
-  <a href="#">
-    <img src="./Assets/Logo.png" alt="Logo de Syncro" width="300" style="border-radius:10px;"/>
-  </a>
-
+  <img src="./Assets/Logo.png" alt="Logo de Syncro" width="100%" />
   <h1>🚀 Proyecto ING-2: Equipo SYNCRO</h1>
   <p><em>Repositorio de Documentación</em></p>
-
   <p>
     <img src="https://img.shields.io/badge/Estado-En_Desarrollo-brightgreen?style=flat-square" alt="Estado">
     <img src="https://img.shields.io/badge/Sistema-Gestión_Centro_Deportivo-blue?style=flat-square" alt="Gestión">
     <img src="https://img.shields.io/badge/Documentación-Activa-orange?style=flat-square" alt="Docs">
   </p>
-
-  <br>
 </div>
 
----
+<hr>
 
-<table width="100%">
+<table align="center" width="100%">
   <tr>
-    <td width="50%" align="center" valign="top">
+    <td align="center" width="50%" valign="top">
       <h3>📖 Sobre el Proyecto</h3>
       <p>Sistema integral para la gestión de un centro de actividades.</p>
-      <br>
       <a href="./enunciado.pdf">
-        <img src="https://img.shields.io/badge/-📄_Ver_Enunciado-474747?style=for-the-badge&hovercolor=blue" alt="Enunciado">
+        <img src="https://img.shields.io/badge/-📄_Ver_Enunciado-474747?style=for-the-badge" alt="Enunciado">
       </a>
     </td>
-    <td width="50%" align="center" valign="top">
+    <td align="center" width="50%" valign="top">
       <h3>👥 Integrantes</h3>
       <br>
       <kbd>Valentín</kbd> &nbsp; <kbd>Elian</kbd> &nbsp; <kbd>Isabella</kbd><br><br>
@@ -36,7 +29,7 @@
   </tr>
 </table>
 
----
+<hr>
 
 <div align="center">
   <h3>📂 Sobre la materia</h3>
