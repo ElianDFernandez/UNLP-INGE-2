@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./Assets/Logo-border-radius.png" alt="Logo de Syncro" width="30" />
+  <img src="./Assets/Logo-border-radius.png" alt="Logo de Syncro" width="100%" />
   <h1>🚀 Proyecto ING-2: Equipo SYNCRO</h1>
   <p><em>Repositorio de Documentación</em></p>
   <p>
@@ -14,7 +14,7 @@
 <div align="center">
   <img src="https://placehold.co/1000x4/1A8DDE/1A8DDE.png" width="100%" height="4" alt="Borde Azul">
 </div>
-<table width="100%">
+<table align="center" width="100%">
   <tr>
     <td align="center" width="50%" valign="top">
       <h3>📖 Sobre el Proyecto</h3>
@@ -32,6 +32,7 @@
     </td>
   </tr>
 </table>
+<img src="https://placehold.co/1000x4/1A8DDE/1A8DDE.png" width="100%" height="4" alt="Borde Azul Inferior">
 
 <hr>
 
