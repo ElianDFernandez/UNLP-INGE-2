@@ -17,7 +17,7 @@
         <h3>📖 Sobre el Proyecto</h3>
         <p>Sistema integral para la gestión de un centro de actividades.</p>
         <br>
-        <a href="./enunciado.pdf">
+        <a href="./Enunciado.pdf">
           <img src="https://img.shields.io/badge/-📄_Ver_Enunciado-1A8DDE?style=for-the-badge" alt="Enunciado">
         </a>
       </td>
