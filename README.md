@@ -22,7 +22,7 @@
         <h3>📖 Sobre el Proyecto</h3>
         <p>Desarrollo de una plataforma integral para la reserva de clases, gestión de socios y administración de pagos.</p>
         <br>
-        <a href="./Enunciado.pdf">
+        <a href="./Enunciado.md">
           <img src="https://img.shields.io/badge/-📄_Ver_Enunciado-1A8DDE?style=for-the-badge" alt="Enunciado">
         </a>
       </td>
