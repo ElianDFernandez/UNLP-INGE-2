@@ -8,13 +8,10 @@
     <img src="https://img.shields.io/badge/Documentación-Activa-orange?style=flat-square" alt="Docs">
   </p>
 </div>
-
-<hr>
-
 <div align="center">
-  <img src="https://placehold.co/1000x4/1A8DDE/1A8DDE.png" width="100%" height="4" alt="Borde Azul">
+  <img src="https://placehold.co/1000x4/1A8DDE/1A8DDE.png" width="100%"height="4" alt="Borde Azul">
 </div>
-<table align="center" width="100%">
+<table align="center" width="100%" style="border: none;">
   <tr>
     <td align="center" width="50%" valign="top">
       <h3>📖 Sobre el Proyecto</h3>
@@ -33,8 +30,6 @@
   </tr>
 </table>
 <img src="https://placehold.co/1000x4/1A8DDE/1A8DDE.png" width="100%" height="4" alt="Borde Azul Inferior">
-
-<hr>
 
 <div align="center">
   <h3>📂 Sobre la materia</h3>
