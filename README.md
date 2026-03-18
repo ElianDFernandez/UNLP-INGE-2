@@ -1,13 +1,6 @@
 <div align="center">
-  <img src="https://placehold.co/1000x4/1A8DDE/1A8DDE.png" width="100%" height="4" alt="Borde Azul Superior"/>
-</div>
-
-<div align="center">
   <img src="./Assets/Logo-border-radius.png" alt="Logo de Syncro" width="600" />
-  
-  <h1>
-    Proyecto ING-2: Equipo SYNCRO
-  </h1>
+  <h2>Proyecto ING-2: Equipo SYNCRO</h2>
   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm9wOGdva3AxMTRuOG9pNzlhY3lvdzliOHlzb21zd2hmeWJxb3ptYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LPFNd1AJBoYcVUExmE/giphy.gif" width="80" style="vertical-align: middle;"/> 
   <p><em>Repositorio de Documentación</em></p>
   <p>
