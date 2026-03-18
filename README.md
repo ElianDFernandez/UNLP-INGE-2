@@ -34,7 +34,6 @@
   <a href="./Presentacion.pdf">
     <img src="https://img.shields.io/badge/📄-Presentación_del_Proyecto-red?style=flat-square" alt="Presentación">
   </a>
-  &nbsp; &nbsp; &nbsp;
   <a href="./Cronograma.pdf">
     <img src="https://img.shields.io/badge/📆-Cronograma-purple?style=flat-square" alt="Cronograma">
   </a>
