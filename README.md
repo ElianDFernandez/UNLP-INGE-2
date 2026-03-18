@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./Assets/Logo.png" alt="Logo de Syncro" width="100%" />
+  <img src="./Assets/Logo-border-radius.png" alt="Logo de Syncro" width="100%" />
   <h1>🚀 Proyecto ING-2: Equipo SYNCRO</h1>
   <p><em>Repositorio de Documentación</em></p>
   <p>
@@ -11,20 +11,27 @@
 
 <hr>
 
-<table align="center" width="100%">
+<table bgcolor="#1A8DDE" width="100%" cellpadding="1" cellspacing="0">
   <tr>
-    <td align="center" width="50%" valign="top">
-      <h3>📖 Sobre el Proyecto</h3>
-      <p>Sistema integral para la gestión de un centro de actividades.</p>
-      <a href="./enunciado.pdf">
-        <img src="https://img.shields.io/badge/-📄_Ver_Enunciado-474747?style=for-the-badge" alt="Enunciado">
-      </a>
-    </td>
-    <td align="center" width="50%" valign="top">
-      <h3>👥 Integrantes</h3>
-      <br>
-      <kbd>Valentín</kbd> &nbsp; <kbd>Elian</kbd> &nbsp; <kbd>Isabella</kbd><br><br>
-      <kbd>Vladimir</kbd> &nbsp; <kbd>Sebastián</kbd>
+    <td>
+      <table bgcolor="#0d1117" width="100%" cellpadding="10" cellspacing="0">
+        <tr>
+          <td align="center" width="50%" valign="top">
+            <h3>📖 Sobre el Proyecto</h3>
+            <p>Sistema integral para la gestión de un centro de actividades.</p>
+            <br>
+            <a href="./enunciado.pdf">
+              <img src="https://img.shields.io/badge/-📄_Ver_Enunciado-474747?style=for-the-badge&hovercolor=blue" alt="Enunciado">
+            </a>
+          </td>
+          <td align="center" width="50%" valign="top">
+            <h3>👥 Integrantes</h3>
+            <br>
+            <kbd>Valentín</kbd> &nbsp; <kbd>Elian</kbd> &nbsp; <kbd>Isabella</kbd><br><br>
+            <kbd>Vladimir</kbd> &nbsp; <kbd>Sebastián</kbd>
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>
