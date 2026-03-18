@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="./Assets/Logo-border-radius.png" alt="Logo de Syncro" width="300" />
+  <img src="./Assets/Logo-border-radius.png" alt="Logo de Syncro" width="600" />
   
   <h1>
     Proyecto ING-2: Equipo SYNCRO
