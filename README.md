@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./Assets/Logo-border-radius.png" alt="Logo Syncro" width="200" />
+  <img src="./frontend/src/assets/logo-sin-fondo.png" alt="Logo Syncro" width="100" />
 
   <h1>Proyecto ING-2</h1>
   <p><strong>Sistema de Gestión para Centros de Actividades</strong></p>
@@ -56,3 +56,16 @@ La aplicación tiene como objetivo facilitar la administración de socios, la re
 ```bash
 git clone https://github.com/ElianDFernandez/INGE-2.git
 cd INGE-2
+```
+
+```bash
+docker-compose up -d
+```
+
+```
+🎨 Frontend (React): 👉 http://localhost:5173
+
+⚙️ Backend (Laravel): 👉 http://localhost:8000
+
+🗄️ Base de Datos (phpMyAdmin): 👉 http://localhost:8080
+```
