@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/Estado-En_Desarrollo-brightgreen?style=flat-square" alt="Estado">
     <img src="https://img.shields.io/badge/Stack-Por_Definir-lightgrey?style=flat-square" alt="Stack">
     <img src="https://img.shields.io/badge/UNLP-Informática-orange?style=flat-square" alt="Facultad">
-  </p>
+  </p> 
 </div>
 
 <div align="center">
