@@ -20,9 +20,6 @@
 Este repositorio contiene el desarrollo de un sistema de gestión para centros de actividades.  
 La aplicación tiene como objetivo facilitar la administración de socios, la reserva de clases y la gestión de pagos en una única plataforma.
 
-🔗 Repositorio:  
-https://github.com/ElianDFernandez/INGE-2
-
 ---
 
 ## 🎯 Objetivos
