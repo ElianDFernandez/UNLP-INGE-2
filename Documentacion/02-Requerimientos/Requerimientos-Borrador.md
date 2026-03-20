@@ -67,3 +67,43 @@
 
 **RF-17 (Gestión de Personal)**: El sistema debe permitir al Administrador gestionar (dar de alta, baja y modificar) las cuentas de los Empleados del centro.
 **RF-18 (Panel de Métricas)**: El sistema debe proveer al Administrador un panel de control (Dashboard) que consolide y grafique indicadores clave del negocio: cantidad de socios activos/ocasionales, morosidad, nivel de ocupación, horarios de mayor demanda, ingresos del mes, asistencia y tamaño de listas de espera.
+
+---
+
+## Estimación en Puntos de Historia (Scrum)
+
+**Convención:** 1 punto = 2 horas de trabajo efectivo.
+
+### Épica 1: Gestión de Usuarios y Accesos (aprox. 65 puntos)
+- RF-01 Registro online de usuarios: 10 puntos (20 h)
+- RF-02 Asignación y modificación de perfiles: 5 puntos (10 h)
+- RF-03 Control de asistencia con QR: 20 puntos (40 h)
+
+### Épica 2: Catálogo y Agenda (aprox. 60 puntos)
+- RF-04 ABM de actividades: 10 puntos (20 h)
+- RF-05 Configuración de turnos: 15 puntos (30 h)
+- RF-06 Validación de espacios: 15 puntos (30 h)
+
+### Épica 3: Gestión de Reservas y Listas de Espera (aprox. 80 puntos)
+- RF-07 Generación automática de reservas: 15 puntos (30 h)
+- RF-08 Reserva y seña para ocasionales: 15 puntos (30 h)
+- RF-09 Cancelaciones: 8 puntos (16 h)
+- RF-10 Lista de espera con temporizador: 20 puntos (40 h)
+
+### Épica 4: Cobros, Créditos y Automatizaciones (aprox. 80 puntos)
+- RF-11 Registro de pagos: 8 puntos (16 h)
+- RF-11b Cálculo de abono y beneficio: 8 puntos (16 h)
+- RF-12 Recordatorios automáticos: 5 puntos (10 h)
+- RF-13 Suspensión automática y liberación de cupo: 10 puntos (20 h)
+- RF-14 Sistema de créditos: 8 puntos (16 h)
+- RF-15 Penalidad por cancelación: 5 puntos (10 h)
+- RF-16 Devolución y retención de señas: 8 puntos (16 h)
+
+### Épica 5: Dashboard y Gerencia (aprox. 50 puntos)
+- RF-17 Gestión de personal: 8 puntos (16 h)
+- RF-18 Panel de métricas: 17 puntos (34 h)
+
+### Requerimientos No Funcionales y tareas transversales (aprox. 40 puntos)
+- Responsive, migración de datos, identidad visual, pruebas de capacidad, documentación: 20 puntos (40 h)
+
+**Total estimado:** 375 puntos ≈ 750 horas de trabajo efectivo (sincrónico, no incluye tiempos de espera, reuniones, ni aprendizaje).
