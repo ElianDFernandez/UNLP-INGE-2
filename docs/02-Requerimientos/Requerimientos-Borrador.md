@@ -47,7 +47,7 @@
 **RF-07 (Generación Automática - Abonados)**: El sistema debe generar automáticamente las Reservas mensuales recurrentes (turnos fijos) para los Socios Abonados, ocupando los cupos correspondientes.
 **RF-08 (Reserva y Seña - Ocasionales)**: El sistema debe permitir a los Clientes Ocasionales reservar un turno. Esta reserva quedará "Pendiente" hasta que abonen una seña online del 50%, momento en el cual pasará a "Confirmada" (el sistema también debe permitir al empleado confirmarla manualmente como excepción).
 **RF-09 (Cancelaciones)**: El sistema debe permitir a los usuarios (o al empleado) cancelar una Reserva existente.
-**RF-10 (Lista de Espera con Temporizador)**: Al liberarse un cupo, el sistema debe notificar al primer usuario de la Lista de Espera, otorgándole un tiempo límite estipulado para aceptar el lugar. Si no responde, el sistema debe ofrecer el cupo al siguiente de la lista. (No respondio el tiempo, podemos asumir 24 horas para que el sistema ofrezca el cupo al siguiente de la lista).
+**RF-10 (Lista de Espera con Temporizador)**: Al liberarse un cupo, el sistema debe notificar al primer usuario de la Lista de Espera, otorgándole un tiempo límite estipulado para aceptar el lugar. Si no responde, el sistema debe ofrecer el cupo al siguiente de la lista. (Podemos asumir 2 horas para que el sistema ofrezca el cupo al siguiente de la lista).
 
 #### Épica 4:
 **Nombre épica**: Cobros, Créditos y Automatizaciones
