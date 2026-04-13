@@ -54,7 +54,7 @@ para publicar correctamente la oferta deportiva.
 
 Criterios de aceptación:
 - Se define día, hora inicio, hora fin, cancha y cupo máximo.
-- El turno queda disponible para reserva según su estado.
+- El turno queda disponible para reserva.
 - Se valida coherencia de franja horaria (inicio menor a fin).
 
 **HU-06 (RF-06) - Validación de disponibilidad de espacio**
@@ -65,7 +65,7 @@ para evitar conflictos operativos.
 Criterios de aceptación:
 - Si existe superposición, la operación se rechaza.
 - El mensaje de validación indica turno/cancha en conflicto.
-- La validación aplica en alta y reasignación.
+- La validación se aplica en la alta.
 
 #### Épica 3: Gestión de Reservas y Listas de Espera
 

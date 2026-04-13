@@ -35,8 +35,8 @@ Alcance del producto:
 
 - IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications, IEEE, 1998.
 - IEEE Std 1058-1998, IEEE Standard for Software Project Management Plans, IEEE, 1998.
-- Requerimientos-Borrador.md.
-- Epicas.md.
+- Entrevistas.
+- Epicas.
 
 ## 2) Descripción general
 
@@ -48,9 +48,9 @@ El objetivo principal es acelerar la operación diaria de reservas y cancelacion
 
 ### b. Perspectiva del producto
 
-El producto se concibe como una aplicación web independiente, con potencial integración a servicios externos:
+El producto se concibe como una aplicación web, con potencial integración a servicios externos:
 - Pasarela de pago online para señas y cuotas.
-- Canal de notificaciones (email y/o mensajería) para recordatorios y listas de espera.
+- Canal de notificaciones (email) para recordatorios y listas de espera.
 - Servicio de generación/validación de códigos QR.
 
 Si falla una integración externa, el impacto debe ser parcial y degradado:
@@ -84,7 +84,7 @@ Si falla una integración externa, el impacto debe ser parcial y degradado:
 ### d. Evolución previsible del sistema
 
 - Integración con múltiples pasarelas de pago.
-- App móvil nativa para socios y staff.
+- App PWA (Portal Web Application)
 - Reglas dinámicas de precios/promociones.
 - Analítica avanzada de ocupación y predicción de demanda.
 - Integración con control de acceso físico (molinete/lector QR dedicado).
@@ -106,7 +106,6 @@ Si falla una integración externa, el impacto debe ser parcial y degradado:
 - Servicio de notificaciones para:
 	- Recordatorios de pago.
 	- Avisos de lista de espera con temporizador.
-- Módulo/servicio de generación y validación de QR.
 
 #### c. Interfaces de Hardware
 
@@ -115,7 +114,7 @@ Si falla una integración externa, el impacto debe ser parcial y degradado:
 ### 3.2 Requisitos funcionales
 
 - RF-01 Registro online de usuarios.
-- RF-02 Gestión de reserva de actividad y de clase.
+- RF-02 Gestión de reserva de actividad o de clase.
 - RF-03 Control de asistencia con QR.
 - RF-04 Gestión de actividades.
 - RF-05 Gestión de turnos.
@@ -136,8 +135,7 @@ Si falla una integración externa, el impacto debe ser parcial y degradado:
 
 ### 3.3 Requisitos no funcionales
 
-- RNF-01 Plataforma web accesible desde PC de recepción.
-- RNF-02 Diseño responsive para móviles.
-- RNF-03 Soporte para al menos 200 socios activos recurrentes.
-- RNF-04 Identidad visual simple y moderna orientada a velocidad operativa.
+- RNF-01 Diseño responsive para móviles y pc.
+- RNF-02 Soporte para al menos 200 usuarios activos concurrentes.
+- RNF-03 Identidad visual simple y moderna orientada a velocidad operativa.
 

@@ -14,6 +14,25 @@
 14. ¿Hay algún requisito difícil de probar o medir? ¿Los criterios de aceptación ayudan a clarificar?
 15. ¿Encontraste contradicciones, repeticiones o partes confusas que convendría revisar?
 16. **¿RNF-04 Soporte de migración inicial desde planillas existentes?**
+17. **De un requerimiento sale una historia de usuario?**
+
+PGP 
+
+2) Planes generales
+* a. Documentacion que entregamos entra? que documentacion?
+* b. Calendario, es el cronograma de la materia?
+* c. Que roles tendriamos cada uno? Necesarios todo el proyecto?
+
+3) Presupuesto 
+* a. Que  hicimos en cada etapa? Preguntar por etapas de teoria Linea Base
+* 
+
+
+
+
+
+
+
 
 ---
 
