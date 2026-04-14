@@ -19,6 +19,8 @@ Este documento esta dirigido a Laura y Jose, y al equipo de desarrolladores del 
 -**CRÉDITO:** Saldo a favor del socio que puede ser utilizado para futuras reservas o cobros.
 -**LISTA DE ESPERA:** Mecanismo para gestionar reservas cuando una actividad está completa, con asignación automática de cupo si se libera uno.
 -**DASHBOARD:** Panel de control para el administrador con indicadores clave del negocio.
+-**API:** Interfaz de Programación de Aplicaciones, utilizada para integrar servicios externos como pasarelas de pago.
+-**PWA:** Aplicación Web Progresiva, una aplicación web que se comporta como una aplicación nativa en dispositivos móviles.
 
 ### 1.4 Referencias
 
@@ -96,10 +98,14 @@ Logo Propuesto:
 #### b. Interfaces de Software
 
 - **Mercado Pago:** 
-	* Proposito: Facilitar el proceso de pagos en linea para reservas tanto de actividades como de clases
+	* Proposito: Facilitar el proceso de pagos en linea para reservas tanto de actividades como de clases.
+	* Uso: El usuario del sistema podra registrar su medio de pago (Mercado pago) y realizar pagos de seña o pagos completos para confirmar sus reservas. El sistema se integrara con la API de Mercado Pago para procesar estos pagos de manera segura y eficiente.
+	* Integraciones: El sistema se comunicara con la API de Mercado Pago para gestionar la transaccion.
+	* Consideraciones: La funcionalidad depende de la disponibilidad de la API de Mercado Pago, y se implementaran medidas de seguridad para proteger los datos de pago de los usuarios.
+
 #### c. Interfaces de Hardware
 
-- Cámara de dispositivo móvil en recepción para validación de asistencia.
+- Cámara de dispositivo móvil para validación de asistencia.
 
 ### 3.2 Requisitos funcionales
 
@@ -115,18 +121,19 @@ Logo Propuesto:
 - RF-10: Crear actividad deportiva.
 - RF-11: Modificar actividad deportiva.
 - RF-12: Dar de baja actividad deportiva.
-- RF-13: Crear turno en la grilla de horarios.
-- RF-14: Modificar turno en la grilla.
-- RF-15: Consultar grilla de horarios.
-- RF-16: Eliminar turno de la grilla.
+- RF-13: Crear turnos de una actividad.
+- RF-14: Modificar turno de una actividad.
+- RF-15: Consultar turnos de una actividad.
+- RF-16: Eliminar turno de una actividad.
 - RF-17: Inscribirse a actividad en un turno específico.
 - RF-18: Reservar clases individuales.
 - RF-19: Anotarse en lista de espera.
 - RF-20: Cancelar reservas.
 - RF-21: Abonar seña de reserva.
-- RF-22: Registrar cobros y pagos.
-- RF-23: Registrar asistencia mediante escaneo de código QR.
-- RF-24: Consultar panel de métricas e ingresos.
+- RF-22: Registrar cobro manual.
+- RF-23: Registrar pago.
+- RF-24: Registrar asistencia mediante escaneo de código QR.
+- RF-25: Consultar panel de métricas.
 
 ### 3.3 Requisitos no funcionales
 
