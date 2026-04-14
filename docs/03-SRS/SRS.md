@@ -21,6 +21,7 @@ Este documento esta dirigido a Laura y Jose, y al equipo de desarrolladores del 
 -**DASHBOARD:** Panel de control para el administrador con indicadores clave del negocio.
 -**API:** Interfaz de Programación de Aplicaciones, utilizada para integrar servicios externos como pasarelas de pago.
 -**PWA:** Aplicación Web Progresiva, una aplicación web que se comporta como una aplicación nativa en dispositivos móviles.
+-**CAD:** Sistema de gestión de Centro de Actividades Deportivas.
 
 ### 1.4 Referencias
 
