@@ -130,11 +130,12 @@ Logo Propuesto:
 - RF-18: Reservar clases individuales.
 - RF-19: Anotarse en lista de espera.
 - RF-20: Cancelar reservas.
-- RF-21: Abonar seña de reserva.
-- RF-22: Registrar cobro manual.
-- RF-23: Registrar pago.
-- RF-24: Registrar asistencia mediante escaneo de código QR.
-- RF-25: Consultar panel de métricas.
+- RF-21: Registrar medio de pago.
+- RF-22: Abonar seña de reserva.
+- RF-23: Registrar cobro manual.
+- RF-24: Registrar pago.
+- RF-25: Registrar asistencia mediante escaneo de código QR.
+- RF-26: Consultar panel de métricas.
 
 ### 3.3 Requisitos no funcionales
 
