@@ -48,4 +48,3 @@ Escenario 3: Contraseña no cumple requisitos
 - Dado un nombre de usuario "Carlos Gomez", un email "carlosGomez@mail.com", el cual no se encuentra registrado, y una contraseña "password", cuando el cliente completa el formulario de registro y lo envía, entonces el sistema muestra un mensaje de error indicando que la contraseña no cumple con los requisitos.
 ````
 
-

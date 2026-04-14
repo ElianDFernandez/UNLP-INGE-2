@@ -2,103 +2,82 @@
 
 ## 1) Introducción
 
-### 1.1 Propósito
+### a. Propósito y alcance
 
-El propósito de este SRS es establecer una base común entre el cliente y el equipo de desarrollo sobre los requisitos del sistema, delimitando el alcance funcional y no funcional de la solución, y proveyendo trazabilidad entre el desarrollo de funcionalidades y los requerimientos originales.
+El propósito de este documento es definir de manera clara y detallada los requisitos funcionales y no funcionales para el desarrollo del proyecto "CAD" (Centro de Actividades Deportivas), una plataforma integral para la gestión de un centro deportivo que ofrece diversas actividades y clases.
 
-Audiencia:
-- Cliente y responsables del negocio.
-- Equipo de desarrollo.
+Este documento esta dirigido a Laura y Jose, y al equipo de desarrolladores del sistema, con el proposito de establecer un base comun de entendimiento sobre los requisitos del sistema y coordinar las expectativas entre las partes involucradas.
 
-### 1.2 Alcance
+### b. Definiciones, acrónimos y abreviaturas
 
-Nombre del producto: Sistema de Gestión para Centro de Actividades Deportivas.
-
-El producto permitirá:
-- Gestión de usuarios, actividades, reservas, cancelaciones, cobros y métricas operativas/gerenciales.
-- Operación principal vía web, con uso en recepción y dispositivos móviles.
-
-El producto no contempla:
-- Integración con sistemas de control de acceso físico externos (más allá del QR propio).
-- Gestión contable (más allá de métricas e ingresos básicos).
-
-Beneficios y objetivos:
-- Acelerar la operación diaria de reservas y cancelaciones.
-- Reducir la carga manual del personal.
-- Brindar visibilidad de indicadores clave para la toma de decisiones.
-
-### 1.3 Definiciones, siglas y abreviaciones
-
-SRS: Software Requirements Specification.
-RF: Requerimiento Funcional.
-RNF: Requerimiento No Funcional.
-HU: Historia de Usuario.
-ABM: Alta, Baja y Modificación.
-QR: Código de respuesta rápida para identificación y asistencia.
-Socio: cliente registrado en el sistema.
-Inscripción mensual recurrente: anotación automática y periódica a una actividad específica.
-Modalidad de clase individual: reserva puntual con seña por clase.
-Medio de pago: forma registrada para abonar cuotas, señas o cargos asociados.
-Empleado: usuario operativo cuyo rol está asociado a una actividad específica que puede gestionar.
+-**ABONADO** Socio del centro que tiene un turno fijo asignado en una actividad específica cada mes, con beneficios como descuentos y prioridad en reservas.
+-**OCASIONAL** Socio que no tiene un turno fijo asignado y reserva clases individuales.
+-**SOCIO:** Usuario registrado en el sistema que puede reservar actividades y gestionar su cuenta.
+-**EMPLEADO:** Usuario operativo cuyo rol está asociado a una actividad específica que puede gestionar.
+-**ADMINISTRADOR:** Usuario con permisos elevados para gestionar el sistema y acceder a información sensible.
+-**SEÑA:** Pago parcial requerido para reservar una clase individual.
+-**CRÉDITO:** Saldo a favor del socio que puede ser utilizado para futuras reservas o cobros.
+-**LISTA DE ESPERA:** Mecanismo para gestionar reservas cuando una actividad está completa, con asignación automática de cupo si se libera uno.
+-**DASHBOARD:** Panel de control para el administrador con indicadores clave del negocio.
 
 ### 1.4 Referencias
 
-- [REF-01] Entrevista 1.
-- [REF-02] Entrevista 2.
-- [REF-03] Cuestionario.
-- [REF-04] Epicas.
+Nombre del documento | Fecha de creacion | Autor 
+--- | --- | ---
+[Entrevista 1](../01-Entrevistas/Entrevista-1.md) | 30/03/2026 | Syncro
+[Cuestionario](../01-Entrevistas/Cuestionario.md) | 30/03/2026 | Syncro
+[Entrevista 2](../01-Entrevistas/Entrevista-2.md) | 06/04/2026 | Syncro
+[Epicas](../02-Epícas/Epicas.md)| 06/04/2026 | Syncro
 
-### 1.5 Apreciación global
-
-Este documento proporciona una visión integral de los requisitos del sistema, permitiendo al cliente y al equipo de desarrollo comprender el alcance, los objetivos y las restricciones del producto. Sirve como base para el diseño, desarrollo, pruebas y validación del sistema, asegurando que las funcionalidades implementadas respondan a las necesidades identificadas y acordadas.
 
 ## 2) Descripción general
 
 ### a. Resumen de la idea del producto
 
-El sistema permite administrar de manera integral un centro de actividades deportivas, contemplando registro de socios, gestión de actividades y turnos, reservas, listas de espera, cobros, cancelaciones, créditos y un dashboard para el perfil administrador.
+"CAD" es una platafroma web progresiva (PWA) diseñada para digitalizar y automatizar la gestión de un centro deportivo que ofrece múltiples actividades. 
 
-El objetivo principal es acelerar la operación diaria de reservas y cancelaciones, reducir la carga manual del personal y brindar visibilidad de indicadores clave para la toma de decisiones.
+El sistema permitirá a los socios registrarse, reservar actividades, gestionar pagos y recibir notificaciones, mientras que los empleados podrán administrar las operaciones diarias y el administrador tendrá acceso a métricas clave para la toma de decisiones estratégicas.
+
+La plataforma distingue claramente entre roles operativos (empleados) y gerenciales (administrador), con funcionalidades específicas para cada uno, y busca reducir la carga manual mediante automatizaciones, como la gestión de listas de espera y recordatorios de pago.
+
+Los empleados podrán gestionar actividades, turnos y asistencias mediante QR, mientras que los socios podrán reservar tanto actividades regulares como clases individuales con seña. El sistema también manejará la suspensión automática por mora y la liberación de cupos, optimizando la experiencia tanto para los usuarios como para el personal del centro. Por otro lado el administrador tendrá un dashboard con indicadores clave del negocio, como cantidad de socios activos, socios abonados vs ocasionales, entre otros que le permitirán tener una visión general del estado del centro y tomar decisiones en base a los datos.
+
+"CAD" se concibe como una solución integral que no solo mejora la eficiencia operativa, sino que también ofrece una experiencia de usuario fluida y moderna, adaptada a las necesidades específicas de un centro deportivo.
 
 ### b. Perspectiva del producto
 
-El producto se concibe como una aplicación web Progresiva (PWA), con potencial integración a servicios externos:
-- Pasarela de pago online para señas y cuotas.
-- Canal de notificaciones (email) para recordatorios y listas de espera.
-- Servicio de generación/validación de códigos QR.
-
-Si falla una integración externa, el impacto debe ser parcial y degradado:
-- Si falla pagos online, el empleado puede registrar cobros manualmente.
-- Si falla notificaciones, el turno no se asigna automáticamente sin trazabilidad de intento.
+"CAD" es un producto independiente que no forma parte de un sistema más grande, pero que se integra con servicios externos como pasarelas de pago online y sistemas de mensajería para notificaciones. Los problemas con estos servicios externos afectarian solo parcialmente al sistema.
 
 ### c. Características de los usuarios
 
 - Socio:
 	- Registrarse e iniciar sesión.
 	- Registrar un medio de pago.
-	- Reservar clases puntuales con seña.
-	- Reservar una actividad y quedar anotado mensualmente en esa misma actividad cuando corresponda.
-	- Cancelar reservas y gestionar créditos/devoluciones según política.
+	- Reservar clases.
+	- Reservar una actividad.
+	- Cancelar reservas.
+	- Ver actividades disponibles y horarios.
+	- Ver clases disponibles.
+	- Recibir notificaciones de recordatorios de pago y avisos de lista de espera.
+	- Confirmar asistencia a clase por estar en lista de espera.
 
 - Empleado:
-	- Gestionar la actividad asignada y sus turnos.
+	- Iniciar sesión.
+	- Gestionar actividad y sus turnos.
 	- Validar asistencia por QR.
-	- Confirmar excepciones de reserva/pago.
 	- Registrar cobros manuales.
 
 - Administrador:
-	- ABM de cuentas de empleados.
+	- Iniciar sesión.	
+	- ver listado de empleados.
+	- Dar de alta a un empleado.
+	- Dar de baja a un empleado.
+	- Modificar datos de un empleado.
 	- Consultar dashboard de indicadores de negocio.
-
-- Sistema:
-	- Recordatorios de pago.
-	- Suspensión automática por mora.
-	- Liberación de cupos y gestión de lista de espera.
 
 ### d. Evolución previsible del sistema
 
 - Integración con múltiples pasarelas de pago.
-- App PWA (Portal Web Application)
 - Reglas dinámicas de precios/promociones.
 - Analítica avanzada de ocupación y predicción de demanda.
 - Integración con control de acceso físico (molinete/lector QR dedicado).
@@ -109,18 +88,15 @@ Si falla una integración externa, el impacto debe ser parcial y degradado:
 
 #### a. Interfaz de Usuario
 
-- Diseño simple y moderno bajo la identidad "Centro de Actividades Deportivas".
-- Priorización de flujos rápidos para reserva y cancelación.
-- Interfaz responsive para recepción (PC) y uso móvil.
-- Navegación orientada por rol (Socio, Empleado, Administrador).
+- La interfaz de usuario debe ser intuitiva y fácil de navegar, con un diseño responsive que se adapte tanto a pc como a dispositivos móviles.
+
+Logo Propuesto: 
+![Logo](../../assets/Logo.png)
 
 #### b. Interfaces de Software
 
-- Pasarela de pagos online para señas y cuotas (proveedor a definir).
-- Servicio de notificaciones para:
-	- Recordatorios de pago.
-	- Avisos de lista de espera con temporizador.
-
+- **Mercado Pago:** 
+	* Proposito: Facilitar el proceso de pagos en linea para reservas tanto de actividades como de clases
 #### c. Interfaces de Hardware
 
 - Cámara de dispositivo móvil en recepción para validación de asistencia.
