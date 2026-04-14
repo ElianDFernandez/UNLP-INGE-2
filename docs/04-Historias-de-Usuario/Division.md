@@ -23,14 +23,16 @@
 - RF-16: Eliminar turno de una actividad.
 - RF-17: Inscribirse a actividad en un turno específico.
 - RF-18: Reservar clases individuales.
+- RF-19: Confirmación de asistencia de lista espera.
 
 ## Isabella
-- RF-19: Anotarse en lista de espera.
-- RF-20: Cancelar reservas.
-- RF-21: Abonar seña de reserva.
-- RF-22: Registrar cobro manual.
-- RF-23: Registrar pago.
-- RF-24: Registrar asistencia mediante escaneo de código QR.
+- RF-20: Anotarse en lista de espera.
+- RF-21: Cancelar reservas.
+- RF-22: Registrar medio de pago.
+- RF-23: Abonar seña de reserva. 
+- RF-24: Registrar cobro manual.
+- RF-25: Registrar pago.
+- RF-26: Registrar asistencia mediante escaneo de código QR.
 
 ## Vladimir
-- RF-25: Consultar panel de métricas.
+- RF-27: Consultar panel de métricas.
