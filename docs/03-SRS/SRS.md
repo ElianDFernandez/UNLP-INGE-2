@@ -2,41 +2,55 @@
 
 ## 1) Introducción
 
-### a. Propósito y alcance
+### 1.1 Propósito
 
-Propósito:
-- Establecer una base común entre cliente, y el equipo de desarrollo sobre los requisitos del sistema.
-- Delimitar el alcance funcional y no funcional de la solución.
-- Proveer trazabilidad entre el desarrollo de funcionalidades y los requerimientos originales.
+El propósito de este SRS es establecer una base común entre el cliente y el equipo de desarrollo sobre los requisitos del sistema, delimitando el alcance funcional y no funcional de la solución, y proveyendo trazabilidad entre el desarrollo de funcionalidades y los requerimientos originales.
 
 Audiencia:
 - Cliente y responsables del negocio.
 - Equipo de desarrollo.
 
-Alcance del producto:
+### 1.2 Alcance
+
+Nombre del producto: Sistema de Gestión para Centro de Actividades Deportivas.
+
+El producto permitirá:
 - Gestión de usuarios, actividades, reservas, cancelaciones, cobros y métricas operativas/gerenciales.
 - Operación principal vía web, con uso en recepción y dispositivos móviles.
 
-### b. Definiciones, acrónimos y abreviaturas
+El producto no contempla:
+- Integración con sistemas de control de acceso físico externos (más allá del QR propio).
+- Gestión contable (más allá de métricas e ingresos básicos).
 
-- SRS: Software Requirements Specification.
-- RF: Requerimiento Funcional.
-- RNF: Requerimiento No Funcional.
-- HU: Historia de Usuario.
-- ABM: Alta, Baja y Modificación.
-- QR: Código de respuesta rápida para identificación y asistencia.
-- Socio: cliente registrado en el sistema.
-- Inscripción mensual recurrente: anotación automática y periódica a una actividad específica.
-- Modalidad de clase individual: reserva puntual con seña por clase.
-- Medio de pago: forma registrada para abonar cuotas, señas o cargos asociados.
-- Empleado: usuario operativo cuyo rol está asociado a una actividad específica que puede gestionar.
+Beneficios y objetivos:
+- Acelerar la operación diaria de reservas y cancelaciones.
+- Reducir la carga manual del personal.
+- Brindar visibilidad de indicadores clave para la toma de decisiones.
 
-### c. Referencias
+### 1.3 Definiciones, siglas y abreviaciones
 
-- IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications, IEEE, 1998.
-- IEEE Std 1058-1998, IEEE Standard for Software Project Management Plans, IEEE, 1998.
-- Entrevistas.
-- Epicas.
+SRS: Software Requirements Specification.
+RF: Requerimiento Funcional.
+RNF: Requerimiento No Funcional.
+HU: Historia de Usuario.
+ABM: Alta, Baja y Modificación.
+QR: Código de respuesta rápida para identificación y asistencia.
+Socio: cliente registrado en el sistema.
+Inscripción mensual recurrente: anotación automática y periódica a una actividad específica.
+Modalidad de clase individual: reserva puntual con seña por clase.
+Medio de pago: forma registrada para abonar cuotas, señas o cargos asociados.
+Empleado: usuario operativo cuyo rol está asociado a una actividad específica que puede gestionar.
+
+### 1.4 Referencias
+
+- [REF-01] Entrevista 1.
+- [REF-02] Entrevista 2.
+- [REF-03] Cuestionario.
+- [REF-04] Epicas.
+
+### 1.5 Apreciación global
+
+Este documento proporciona una visión integral de los requisitos del sistema, permitiendo al cliente y al equipo de desarrollo comprender el alcance, los objetivos y las restricciones del producto. Sirve como base para el diseño, desarrollo, pruebas y validación del sistema, asegurando que las funcionalidades implementadas respondan a las necesidades identificadas y acordadas.
 
 ## 2) Descripción general
 
@@ -48,7 +62,7 @@ El objetivo principal es acelerar la operación diaria de reservas y cancelacion
 
 ### b. Perspectiva del producto
 
-El producto se concibe como una aplicación web, con potencial integración a servicios externos:
+El producto se concibe como una aplicación web Progresiva (PWA), con potencial integración a servicios externos:
 - Pasarela de pago online para señas y cuotas.
 - Canal de notificaciones (email) para recordatorios y listas de espera.
 - Servicio de generación/validación de códigos QR.
@@ -109,33 +123,38 @@ Si falla una integración externa, el impacto debe ser parcial y degradado:
 
 #### c. Interfaces de Hardware
 
-- Cámara de dispositivo móvil o lector QR en recepción para control de asistencia.
+- Cámara de dispositivo móvil en recepción para validación de asistencia.
 
 ### 3.2 Requisitos funcionales
 
-- RF-01 Registro online de usuarios.
-- RF-02 Gestión de reserva de actividad o de clase.
-- RF-03 Control de asistencia con QR.
-- RF-04 Gestión de actividades.
-- RF-05 Gestión de turnos.
-- RF-06 Validación de espacios.
-- RF-07 Generación automática de reservas para socios con inscripción mensual recurrente.
-- RF-08 Reserva y seña para clases individuales.
-- RF-09 Cancelaciones.
-- RF-10 Lista de espera con temporizador.
-- RF-11 Registro de pagos.
-- RF-11b Cálculo de cuota y beneficio.
-- RF-12 Recordatorios automáticos.
-- RF-13 Suspensión automática y liberación de cupo.
-- RF-14 Sistema de créditos para inscripciones mensuales recurrentes.
-- RF-15 Penalidad por cancelación para inscripciones mensuales recurrentes.
-- RF-16 Devolución y retención de seña para clases individuales.
-- RF-17 Gestión de personal.
-- RF-18 Panel de métricas.
+- RF-01: Registrarse.
+- RF-02: Iniciar sesión.
+- RF-03: Cerrar sesión.
+- RF-04: Recuperar contraseña.
+- RF-05: Consultar listado de personal.
+- RF-06: Registrar personal del centro.
+- RF-07: Modificar datos del personal.
+- RF-08: Dar de baja al personal.
+- RF-09: Consultar listado de actividades.
+- RF-10: Crear actividad deportiva.
+- RF-11: Modificar actividad deportiva.
+- RF-12: Dar de baja actividad deportiva.
+- RF-13: Crear turno en la grilla de horarios.
+- RF-14: Modificar turno en la grilla.
+- RF-15: Consultar grilla de horarios.
+- RF-16: Eliminar turno de la grilla.
+- RF-17: Inscribirse a actividad en un turno específico.
+- RF-18: Reservar clases individuales.
+- RF-19: Anotarse en lista de espera.
+- RF-20: Cancelar reservas.
+- RF-21: Abonar seña de reserva.
+- RF-22: Registrar cobros y pagos.
+- RF-23: Registrar asistencia mediante escaneo de código QR.
+- RF-24: Consultar panel de métricas e ingresos.
 
 ### 3.3 Requisitos no funcionales
 
-- RNF-01 Diseño responsive para móviles y pc.
+- RNF-01 Diseño responsive para uso en PC y dispositivos móviles.
 - RNF-02 Soporte para al menos 200 usuarios activos concurrentes.
 - RNF-03 Identidad visual simple y moderna orientada a velocidad operativa.
 
