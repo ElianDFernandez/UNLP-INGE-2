@@ -1,6 +1,6 @@
 # Historias de Usuario
 
-### ID: Registrar Socio
+## ID: Registrar Socio
 ### Título:
 **como** cliente 
 **quiero** registrarme en el sistema
@@ -257,7 +257,7 @@ Cuando el usuario accede a la sección de "Actividades Disponibles para Reservar
 Entonces el sistema muestra un mensaje indicando que no hay turnos disponibles para reservar para la actividad seleccionada.
 ````
 
-### ID: Cancelar reserva a actividad
+## ID: Cancelar reserva a actividad
 ### Título:
 **como** usuario abonado
 **quiero** cancelar una reserva
@@ -295,7 +295,7 @@ Cuando se presiona 'Cancelar reserva' y confirma la operación,
 Entonces el sistema cancela la reserva, informa que la reserva fue cancelada y la pérdida del descuento, el turno pasa a estar disponible y envia una notificación al primero de la lista de espera. (setea el contador en 0? )
 ````
 
-### ID: Cancelar reserva a clase individual
+## ID: Cancelar reserva a clase individual
 ### Título:
 **como** usuario no abonado
 **quiero** cancelar una reserva
@@ -321,7 +321,7 @@ Entonces el sistema cancela la reserva, informa que la reserva fue cancelada, el
 
 ````
 
-### ID: Entrar en lista de espera
+## ID: Entrar en lista de espera
 ### Título:
 **como** usuario 
 **quiero** entrar en lista de espera
@@ -339,7 +339,7 @@ Entonces el sistema añade al usuario a la cola de espera, informa que ha sido a
 
 ````
 
-### ID: Registrar metodo de pago
+## ID: Registrar metodo de pago
 ### Título:
 **como** usuario 
 **quiero** registrar un metodo de pago
@@ -371,7 +371,7 @@ Cuando se presiona 'Agregar método' y selecciona MercadoPago,
 Entonces el sistema informa 'Error. No se ha podido establecer la conexión. Intente más tarde'.
 
 ````
-### ID: Eliminar medios de pago
+## ID: Eliminar medios de pago
 ### Título:
 **como** usuario 
 **quiero** quiero eliminar mi medio de pago
@@ -396,7 +396,7 @@ Cuando se presiona 'Eliminar método' y selecciona MercadoPago,
 Entonces el sistema informa 'Error. No se ha podido establecer la conexión. Intente más tarde'. 
 
 ````
-### ID: Cancelar anotación en lista
+## ID: Cancelar anotación en lista
 ### Título:
 **como** usuario 
 **quiero** quiero eliminar anotación en lista de espera
@@ -413,3 +413,4 @@ Cuando se presiona 'Dar de baja'
 Entonces el sistema quita al usuario de la cola e informa la baja.
 
 ````
+
