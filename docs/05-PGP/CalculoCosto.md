@@ -1,117 +1,145 @@
-# Costo del proyecto
+# Cálculo del costo del proyecto
 
-## Tiempo total 
-El tiempo total del proyecto se estima en base a la suma de los tiempos dedicados a cada una de las siguientes actividades:
+## 1. Actividades principales y estimación de esfuerzo
 
-- Planificación: 40 horas
-- Requisitos: 40 horas
-- Diseño: 80 horas
-- Codificación: 500 horas (estimando de un total de 125 puntos de historias de usuario, donde cada punto equivale a 4 horas de trabajo)
+| Actividad                      | Horas por persona | Horas totales (4 personas) |
+|-------------------------------|-------------------|----------------------------|
+| Planificación y análisis       | 16 h              | 64 h                       |
+| Diseño del sistema             | 20 h              | 80 h                       |
+| Configuración del entorno      | 12 h              | 48 h                       |
+| Desarrollo backend             | 60 h              | 240 h                      |
+| Desarrollo frontend            | 60 h              | 240 h                      |
+| Integraciones externas         | 24 h              | 96 h                       |
+| Presentación de demos          | 16 h              | 64 h                       |
+| Pruebas y validación           | 24 h              | 96 h                       |
+| Despliegue                     | 12 h              | 48 h                       |
 
-**Detalle:**
-| RF    | Descripción          | Puntos |
-| ----- | -------------------- | ------ |
-| RF-01 | Registrarse          | 3      |
-| RF-02 | Iniciar sesión       | 2      |
-| RF-03 | Cerrar sesión        | 1      |
-| RF-04 | Recuperar contraseña | 3      |
-| RF-05 | Modificar contraseña | 2      |
-| RF-06 | Ver perfil           | 1      |
-| RF-07 | Editar perfil        | 2      |
+**Total por persona:** 244 horas  
+**Total del proyecto:** 976 horas
 
-| RF    | Descripción         | Puntos |
-| ----- | ------------------- | ------ |
-| RF-08 | Ver mis actividades | 2      |
-| RF-09 | Listado disponibles | 2      |
-| RF-10 | Listado general     | 2      |
-| RF-11 | Crear actividad     | 3      |
-| RF-12 | Modificar actividad | 3      |
-| RF-13 | Baja actividad      | 2      |
-| RF-14 | Filtros             | 3      |
+La estimación incluye: desarrollo, pruebas, integración, corrección de errores y coordinación del equipo.
 
-| RF    | Descripción      | Puntos |
-| ----- | ---------------- | ------ |
-| RF-15 | Crear turno      | 3      |
-| RF-16 | Modificar turno  | 3      |
-| RF-17 | Consultar turnos | 2      |
-| RF-18 | Eliminar turno   | 2      |
-
-| RF    | Descripción         | Puntos |
-| ----- | ------------------- | ------ |
-| RF-19 | Inscribirse         | 3      |
-| RF-20 | Cancelar reserva    | 3      |
-| RF-21 | Clase individual    | 4      |
-| RF-22 | Cancelar individual | 2      |
-
-| RF    | Descripción  | Puntos |
-| ----- | ------------ | ------ |
-| RF-23 | Confirmación | 4      |
-| RF-24 | Anotarse     | 3      |
-| RF-25 | Cancelar     | 2      |
-
-| RF    | Descripción     | Puntos |
-| ----- | --------------- | ------ |
-| RF-26 | Ver crédito     | 2      |
-| RF-27 | Registrar medio | 3      |
-| RF-28 | Eliminar medio  | 2      |
-| RF-29 | Seña            | 4      |
-| RF-30 | Cobro manual    | 3      |
-| RF-31 | Pago            | 5      |
-
-| RF    | Descripción          | Puntos |
-| ----- | -------------------- | ------ |
-| RF-32 | Lista de espera      | 3      |
-| RF-33 | Recordatorio pago    | 3      |
-| RF-34 | Confirmación reserva | 2      |
-
-| RF    | Descripción | Puntos |
-| ----- | ----------- | ------ |
-| RF-35 | Listado     | 2      |
-| RF-36 | Alta        | 3      |
-| RF-37 | Modificar   | 2      |
-| RF-38 | Baja        | 2      |
-
-| RF    | Descripción | Puntos |
-| ----- | ----------- | ------ |
-| RF-45 | QR          | 4      |
-| RF-46 | Manual      | 2      |
-
-| RF    | Descripción | Puntos |
-| ----- | ----------- | ------ |
-| RF-47 | Dashboard   | 4      |
-
-
-
-Total: 668 horas, -> en meses: 668 horas / 160 horas por mes = 4.175 meses, aproximadamente 4 meses y una semana.
-
-## Valores de Hora en Argentina para Desarrolladores (USD)
-
-A continuación se presenta una estimación de los valores por hora para desarrolladores en Argentina, basada en referencias del mercado freelance y de contratación internacional (2025–2026).
+## 2. Valor hora y justificación
 
 | Nivel de experiencia | Valor por hora (USD) |
 |---------------------|----------------------|
-| Junior              | 18 – 25              |
+| Junior              | 15 – 25              |
 | Semi Senior         | 25 – 35              |
 | Senior              | 35 – 55              |
 
-### Consideraciones
+## 3. Cálculo del costo
 
-- Estos valores corresponden a desarrolladores que trabajan bajo modalidad freelance o contractor, generalmente cobrando en dólares.
-- Los valores pueden variar según:
-  - Tecnologías utilizadas
-  - Complejidad del proyecto
-  - Experiencia específica del desarrollador
-  - Tipo de cliente (local vs internacional)
-- En relación de dependencia dentro del mercado local, los valores suelen ser significativamente menores.
+- **Horas totales del proyecto:** 976 h
+- **Valor hora promedio:** USD 10
 
-### Referencias
+**Costo base del desarrollo:**  
+976 h × USD 10 = USD 9.760
 
-- Jobbers: https://www.jobbers.io/argentina-freelancers-crypto-payments-dollar-income-inflation-proof-platforms/  
-- Devico: https://devico.io/blog/what-are-the-outsource-rates-for-software-developers-in-argentina  
+### Gastos adicionales
 
-## Costo total del proyecto
+- Registro de dominio: USD 50
+- Hosting: USD 12 mensuales × 4 meses = USD 48
 
-Para calcular el costo total del proyecto, se multiplica el tiempo estimado por el valor por hora correspondiente al nivel de experiencia del desarrollador.
-Dado que el nivel de expertis varia dentro del equipo, el promedio de valor de hora sera de aproximadamente 30 USD por hora.
+**Total gastos adicionales:** USD 98
 
-Entonces, el costo total del proyecto se estima en: 660 horas * 30 USD/hora = 19,800 USD.
+### Costo total del proyecto
+
+**USD 9.760 + USD 98 = USD 9.858**
+
+## 4. Detalle de historias de usuario
+
+
+| RF    | Descripción          | Puntos | Asignación |
+| ----- | -------------------- | ------ | ---------- |
+| RF-01 | Registrarse          | 2      | Frontend   |
+| RF-02 | Iniciar sesión       | 2      | Frontend   |
+| RF-03 | Cerrar sesión        | 1      | Frontend   |
+| RF-04 | Recuperar contraseña | 2      | Frontend   |
+| RF-05 | Modificar contraseña | 1      | Frontend   |
+| RF-06 | Ver perfil           | 1      | Frontend   |
+| RF-07 | Editar perfil        | 1      | Frontend   |
+| RF-08 | Ver mis actividades  | 2      | Frontend   |
+| RF-09 | Listado disponibles  | 2      | Frontend   |
+| RF-10 | Listado general      | 2      | Frontend   |
+| RF-11 | Crear actividad      | 2      | Frontend   |
+| RF-12 | Modificar actividad  | 2      | Frontend   |
+| RF-13 | Baja actividad       | 1      | Frontend   |
+| RF-14 | Filtros              | 2      | Frontend   |
+| RF-15 | Crear turno          | 2      | Frontend   |
+| RF-16 | Modificar turno      | 2      | Frontend   |
+| RF-17 | Consultar turnos     | 1      | Frontend   |
+| RF-18 | Eliminar turno       | 1      | Frontend   |
+| RF-19 | Inscribirse          | 2      | Frontend   |
+| RF-20 | Cancelar reserva     | 2      | Frontend   |
+| RF-21 | Clase individual     | 2      | Frontend   |
+| RF-22 | Cancelar individual  | 1      | Frontend   |
+| RF-23 | Confirmación         | 2      | Frontend   |
+| RF-24 | Anotarse             | 2      | Frontend   |
+| RF-25 | Cancelar             | 1      | Frontend   |
+| RF-26 | Ver crédito          | 1      | Frontend   |
+| RF-27 | Registrar medio      | 1      | Frontend   |
+| RF-28 | Eliminar medio       | 1      | Frontend   |
+| RF-29 | Seña                 | 1      | Frontend   |
+| RF-30 | Cobro manual         | 1      | Frontend   |
+| RF-31 | Pago                 | 1      | Frontend   |
+| RF-32 | Lista de espera      | 1      | Frontend   |
+| RF-33 | Recordatorio pago    | 1      | Frontend   |
+| RF-34 | Confirmación reserva | 1      | Frontend   |
+| RF-35 | Listado              | 1      | Frontend   |
+| RF-36 | Alta                 | 1      | Frontend   |
+| RF-37 | Modificar            | 1      | Frontend   |
+| RF-38 | Baja                 | 1      | Frontend   |
+| RF-45 | QR                   | 1      | Frontend   |
+| RF-46 | Manual               | 1      | Frontend   |
+| RF-47 | Dashboard            | 1      | Frontend   |
+| RF-01 | Registrarse          | 2      | Backend    |
+| RF-02 | Iniciar sesión       | 2      | Backend    |
+| RF-03 | Cerrar sesión        | 1      | Backend    |
+| RF-04 | Recuperar contraseña | 2      | Backend    |
+| RF-05 | Modificar contraseña | 1      | Backend    |
+| RF-06 | Ver perfil           | 1      | Backend    |
+| RF-07 | Editar perfil        | 1      | Backend    |
+| RF-08 | Ver mis actividades  | 2      | Backend    |
+| RF-09 | Listado disponibles  | 2      | Backend    |
+| RF-10 | Listado general      | 2      | Backend    |
+| RF-11 | Crear actividad      | 2      | Backend    |
+| RF-12 | Modificar actividad  | 2      | Backend    |
+| RF-13 | Baja actividad       | 1      | Backend    |
+| RF-14 | Filtros              | 2      | Backend    |
+| RF-15 | Crear turno          | 2      | Backend    |
+| RF-16 | Modificar turno      | 2      | Backend    |
+| RF-17 | Consultar turnos     | 1      | Backend    |
+| RF-18 | Eliminar turno       | 1      | Backend    |
+| RF-19 | Inscribirse          | 2      | Backend    |
+| RF-20 | Cancelar reserva     | 2      | Backend    |
+| RF-21 | Clase individual     | 2      | Backend    |
+| RF-22 | Cancelar individual  | 1      | Backend    |
+| RF-23 | Confirmación         | 2      | Backend    |
+| RF-24 | Anotarse             | 2      | Backend    |
+| RF-25 | Cancelar             | 1      | Backend    |
+| RF-26 | Ver crédito          | 1      | Backend    |
+| RF-27 | Registrar medio      | 1      | Backend    |
+| RF-28 | Eliminar medio       | 1      | Backend    |
+| RF-29 | Seña                 | 1      | Backend    |
+| RF-30 | Cobro manual         | 1      | Backend    |
+| RF-31 | Pago                 | 1      | Backend    |
+| RF-32 | Lista de espera      | 1      | Backend    |
+| RF-33 | Recordatorio pago    | 1      | Backend    |
+| RF-34 | Confirmación reserva | 1      | Backend    |
+| RF-35 | Listado              | 1      | Backend    |
+| RF-36 | Alta                 | 1      | Backend    |
+| RF-37 | Modificar            | 1      | Backend    |
+| RF-38 | Baja                 | 1      | Backend    |
+| RF-45 | QR                   | 1      | Backend    |
+| RF-46 | Manual               | 1      | Backend    |
+| RF-47 | Dashboard            | 1      | Backend    |
+
+Total punto frontend: 60
+Total punto backend: 60
+Total puntos: 120
+Cada Punto equivale a 4 horas, 120 puntos x 4 horas = 480 horas.
+
+## 5. Referencias
+
+- Jobbers: https://www.jobbers.io/argentina-freelancers-crypto-payments-dollar-income-inflation-proof-platforms/
+- Devico: https://devico.io/blog/what-are-the-outsource-rates-for-software-developers-in-argentina
