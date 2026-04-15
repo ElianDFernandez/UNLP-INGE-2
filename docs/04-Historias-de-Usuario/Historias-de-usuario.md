@@ -193,7 +193,7 @@ Escenario 1: Visualización de perfil exitosa
 ````
 Dado un usuario "Miguel Sanchez" con una sesión activa en el sistema,
 Cuando el usuario accede a la sección de perfil de usuario,
-Entonces el sistema muestra la información del perfil del usuario, incluyendo su nombre, email y foto de perfil.
+Entonces el sistema muestra la información del perfil del usuario.
 ````
 
 ## ID: Editar Perfil de Usuario
