@@ -74,11 +74,9 @@ El desarrollo del sistema "CAD" se organiza en las siguientes actividades princi
 - Desarrollo de lógica de negocio (actividades, turnos, reservas).
 - Implementación de sistema de pagos.
 - Gestión de roles y permisos.
-- Desarrollo de APIs REST.
 
 #### 5. Desarrollo del Frontend
 - Implementación de interfaces de usuario.
-- Integración con APIs del backend.
 - Desarrollo de funcionalidades principales (reservas, pagos, perfil).
 - Adaptación a diseño responsive (PWA).
 
