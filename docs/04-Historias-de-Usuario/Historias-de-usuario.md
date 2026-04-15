@@ -45,7 +45,6 @@ Escenario n: [Descripción breve del escenario]
 - si cancela con 48 horas o más de anticipación se genera un crédito
 - si cancela con menos tiempo pierde el turno
 - si acumula tres cancelaciones en el mes pierde el beneficio del 20% de descuento sobre el abono de las clases
-- Regla 2: Para no abonados si cancela con 24 horas o más se devuelve la seña,si cancela con menos tiempo pierde la seña
 
 ### Criterios de Aceptación:
 Escenario 1: Cancelación exitosa con antelación sin pérdida de beneficio
