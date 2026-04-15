@@ -22,6 +22,7 @@ Este documento esta dirigido a Laura y Jose, y al equipo de desarrolladores del 
 -**API:** Interfaz de Programación de Aplicaciones, utilizada para integrar servicios externos como pasarelas de pago.
 -**PWA:** Aplicación Web Progresiva, una aplicación web que se comporta como una aplicación nativa en dispositivos móviles.
 -**CAD:** Sistema de gestión de Centro de Actividades Deportivas.
+-**ROLES:** Los roles del sistema son configurables y permiten asignar permisos específicos a los usuarios empleados.
 
 ### 1.4 Referencias
 
@@ -37,7 +38,7 @@ Nombre del documento | Fecha de creacion | Autor
 
 ### a. Resumen de la idea del producto
 
-"CAD" es una platafroma web progresiva (PWA) diseñada para digitalizar y automatizar la gestión de un centro deportivo que ofrece múltiples actividades. 
+"CAD" es una plataforma web progresiva (PWA) diseñada para digitalizar y automatizar la gestión de un centro deportivo que ofrece múltiples actividades. 
 
 El sistema permitirá a los socios registrarse, reservar actividades, gestionar pagos y recibir notificaciones, mientras que los empleados podrán administrar las operaciones diarias y el administrador tendrá acceso a métricas clave para la toma de decisiones estratégicas.
 
@@ -99,7 +100,7 @@ Logo Propuesto:
 #### b. Interfaces de Software
 
 - **Mercado Pago:** 
-	* Proposito: Facilitar el proceso de pagos en linea para reservas tanto de actividades como de clases.
+	* Propósito: Facilitar el proceso de pagos en línea para reservas tanto de actividades como de clases.
 	* Uso: El usuario del sistema podra registrar su medio de pago (Mercado pago) y realizar pagos de seña o pagos completos para confirmar sus reservas. El sistema se integrara con la API de Mercado Pago para procesar estos pagos de manera segura y eficiente.
 	* Integraciones: El sistema se comunicara con la API de Mercado Pago para gestionar la transaccion.
 	* Consideraciones: La funcionalidad depende de la disponibilidad de la API de Mercado Pago, y se implementaran medidas de seguridad para proteger los datos de pago de los usuarios.
@@ -110,6 +111,7 @@ Logo Propuesto:
 
 ### 3.2 Requisitos funcionales
 
+#### 3.2.1 Gestión de Autenticación y Usuarios
 - RF-01: Registrarse.
 - RF-02: Iniciar sesión.
 - RF-03: Cerrar sesión.
@@ -117,34 +119,71 @@ Logo Propuesto:
 - RF-05: Modificar contraseña.
 - RF-06: Ver perfil de usuario.
 - RF-07: Editar perfil de usuario.
-- RF-08: Consultar listado de personal.
-- RF-09: Registrar personal del centro.
-- RF-10: Modificar datos del personal.
-- RF-11: Dar de baja al personal.
-- RF-12: Consultar listado de actividades.
-- RF-13: Crear actividad deportiva.
-- RF-14: Modificar actividad deportiva.
-- RF-15: Dar de baja actividad deportiva.
-- RF-16: Crear turnos de una actividad.
-- RF-17: Modificar turno de una actividad.
-- RF-18: Consultar turnos de una actividad.
-- RF-19: Eliminar turno de una actividad.
-- RF-20: Inscribirse a actividad en un turno específico.
+#### 3.2.2 Gestión de Actividades y Reservas
+- RF-08: Consultar mis actividades y clases reservadas.
+- RF-09: Consultar listado de actividades disponibles para reservar.
+- RF-10: Consultar listado de actividades.
+- RF-11: Crear actividad deportiva.
+- RF-12: Modificar actividad deportiva.
+- RF-13: Dar de baja actividad deportiva.
+- RF-14: Filtrar actividades por tipo, horarios y disponibilidad de cupo.
+#### 3.2.3 Turnos
+- RF-15: Crear turnos de una actividad.
+- RF-16: Modificar turno de una actividad.
+- RF-17: Consultar turnos de una actividad.
+- RF-18: Eliminar turno de una actividad.
+#### 3.2.4 Reservas
+- RF-19: Inscribirse a actividad en un turno específico.
+- RF-20: Cancelar reserva a actividad.
 - RF-21: Reservar clases individuales.
-- RF-22: Confirmación de asistencia de lista espera.
-- RF-23: Anotarse en lista de espera.
-- RF-24: Cancelar reservas.
-- RF-25: Registrar medio de pago.
-- RF-26: Eliminar medio de pago registrado.
-- RF-27: Abonar seña de reserva.
-- RF-28: Registrar cobro manual.
-- RF-29: Registrar pago.
-- RF-30: Registrar asistencia mediante escaneo de código QR.
-- RF-31: Consultar panel de métricas.
+- RF-22: Cancelar reserva a clase individual.
+#### 3.2.5 Gestión de Lista de Espera
+- RF-23: Confirmación de asistencia por lista de espera.
+- RF-24: Anotarse en lista de espera.
+- RF-25: Cancelar anotación en lista de espera.
+#### 3.2.6 Gestión de Créditos y Pagos
+- RF-26: Consultar mi crédito disponible con su fecha de vencimiento.
+- RF-27: Registrar medio de pago.
+- RF-28: Eliminar medio de pago registrado.
+- RF-29: Abonar seña de reserva.
+- RF-30: Registrar cobro manual.
+- RF-31: Realizar pago.
+#### 3.2.7 Gestión de Notificaciones
+- RF-32: Notificar a socios en lista de espera sobre disponibilidad de cupo.
+- RF-33: Notificar a socios sobre recordatorios de pago.
+- RF-34: Notificar a socios sobre confirmación de reservas.
+#### 3.2.8 Gestión de Personal
+- RF-35: Consultar listado de personal.
+- RF-36: Registrar personal del centro.
+- RF-37: Modificar datos del personal.
+- RF-38: Dar de baja al personal.
+#### 3.2.9 Gestión de Roles y Permisos
+- RF-39: Consultar listado de roles.
+- RF-40: Crear rol.
+- RF-41: Modificar rol.
+- RF-42: Eliminar rol.
+- RF-43: Asignar rol a un empleado.
+- RF-44: Asignar permisos a un rol.
+#### 3.2.10 Gestión de Asistencia
+- RF-45: Registrar asistencia mediante escaneo de código QR.
+- RF-46: Registrar asistencia manualmente.
+#### 3.2.11 Métricas
+- RF-47: Consultar panel de métricas.
 
 ### 3.3 Requisitos no funcionales
 
-- RNF-01 Diseño responsive para uso en PC y dispositivos móviles.
-- RNF-02 Soporte para al menos 200 usuarios activos concurrentes.
-- RNF-03 Identidad visual simple y moderna orientada a velocidad operativa.
+- **Fiabilidad:** El sistema deberá garantizar la integridad de los datos ante fallos de red o energía, permitiendo la recuperación de las operaciones una vez restablecidas las condiciones normales.
+
+- **Mantenibilidad:** El sistema será entregado sin compromiso de mantenimiento posterior a la entrega final. Cualquier mantenimiento adicional quedará fuera del alcance de este proyecto.
+
+- **Multiplataforma:** El sistema, al ser implementando como Progressive Web App (PWA), es multiplataforma por definición, pudiendo ser utilizado en cualquier dispositivo con un navegador web, como ordenadores, tablets o móviles.
+
+- **Seguridad:** El sistema contará con autenticación para el acceso a funcionalidades específicas a través de cuentas, distinguiendo entre usuario general, empleado y gerente (administrador). Si no se inició sesión, no se podra acceder a ninguna funcionalidad del sistema. Las contraseñas deberán almacenarse de forma cifrada mediante algoritmos seguros.
+
+- **Privacidad:** El sistema implementará estrictas medidas de privacidad para garantizar la protección de la información personal y los datos de los usuarios, asegurando que toda información personal se maneje de acuerdo con las normativas de protección de datos vigentes.
+
+- **Concurrencia:** El sistema debe soportar múltiples usuarios accediendo simultáneamente, garantizando que las operaciones como reservas, pagos y actualizaciones de datos se realicen sin conflictos. Se implementará un mecanismo de control de concurrencia en la base de datos (como transacciones) para evitar inconsistencias, por ejemplo, en la reserva simultánea de una misma actividad.
+
+- **Rendimiento:** El sistema debe ser capaz de manejar un número significativo de usuarios simultáneos (al menos 200 usuarios activos) sin degradación significativa del rendimiento. Las operaciones críticas, como la reserva de actividades o el procesamiento de pagos, deben completarse en un tiempo razonable para garantizar una experiencia de usuario fluida.
+
 
