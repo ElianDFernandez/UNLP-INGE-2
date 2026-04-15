@@ -253,24 +253,30 @@ Cuando el usuario accede a la sección de "Mis Actividades y Clases Reservadas",
 Entonces el sistema muestra un mensaje indicando que no tiene actividades o clases reservadas próximas.
 ````
 
-## ID: Consultar listado de actividades disponibles para reservar
+## ID: Consultar turnos de actividades disponibles para reservar
 ### Título:
 **como** usuario autenticado
-**quiero** consultar el listado de actividades disponibles para reservar
+**quiero** consultar el listado de turnos de actividades disponibles para reservar
 **para** reservar una actividad o clase.
 
 ### Reglas de Negocio
 
 ### Criterios de Aceptación:
-Escenario 1: Consulta de actividades disponibles para reservar exitosa
+Escenario 1: Consultar turnos de actividades disponibles para reservar exitosa
 ````
 Dado un usuario "Carlos Gomez" con una sesión activa en el sistema,
-Cuando el usuario accede a la sección de "Actividades Disponibles para Reservar",
-Entonces el sistema muestra la lista de actividades disponibles para reservar
+Cuando el usuario accede a la sección de "Actividades Disponibles para Reservar" y selecciona una actividad,
+Entonces el sistema muestra el listado de turnos de la actividad seleccionada disponibles para reservar.
 ````
 Escenario 2: Sin actividades disponibles para reservar
 ````
 Dado un usuario "Sofia Ramirez" con una sesión activa en el sistema,
-Cuando el usuario accede a la sección de "Actividades Disponibles para Reservar",
+Cuando el usuario accede a la sección de "Actividades Disponibles para Reservar" y no hay actividades disponibles para reservar,
 Entonces el sistema muestra un mensaje indicando que no hay actividades disponibles para reservar.
+````
+Escenario 3: Sin turnos disponibles para reservar
+````
+Dado un usuario "Miguel Sanchez" con una sesión activa en el sistema,
+Cuando el usuario accede a la sección de "Actividades Disponibles para Reservar", selecciona una actividad, y no hay turnos disponibles para reservar,
+Entonces el sistema muestra un mensaje indicando que no hay turnos disponibles para reservar para la actividad seleccionada.
 ````
