@@ -25,14 +25,15 @@ Escenario n: [Descripción breve del escenario]
 ## Historias de Usuario
 
 ## Isabella
-- RF-20: Anotarse en lista de espera. <-- no seria un escenario de inscribirse??
-- RF-21: Cancelar reservas.
-- RF-22: Registrar medio de pago.
+- RF-20: Anotarse en lista de espera. <-- no seria un escenario de inscribirse?? ✔
+- RF-21: Cancelar reservas. <- separar
+- RF-22: Registrar medio de pago.✔
 - RF-23: Abonar seña de reserva. 
 - RF-24: Registrar cobro manual.
 - RF-25: Registrar pago.
 - RF-26: Registrar asistencia mediante escaneo de código QR.
-- RF-28: Eliminar medio de pago. 
+- RF-28: Eliminar medio de pago. ✔
+- Cancelar anotacion en lista ✔
 
 ### ID: Cancelar reserva
 ### Título:
@@ -137,8 +138,80 @@ Cuando se presiona 'Agregar método' y selecciona MercadoPago,
 Entonces el sistema informa 'Error. No se ha podido establecer la conexión. Intente más tarde'.
 
 ````
+### ID: Eliminar medios de pago
+### Título:
+**como** usuario 
+**quiero** quiero eliminar mi medio de pago
+**para** cambiar el MercadoPago asociado
 
+### Reglas de Negocio:
 
+### Criterios de Aceptación:
+
+Escenario 1: Eliminación exitosa
+````
+- Dado un correo isacasta@gmail.com que corresponde a un usuario existente que posee un método de pago y  que la conexión con la API de mercado pago es exitosa,
+Cuando se presiona 'Eliminar método' y selecciona MercadoPago,
+Entonces el sistema elimina el método de pago e informa 'Método eliminado'. 
+
+````
+
+Escenario 2: Eliminación fallida por error en conexión
+````
+- Dado un correo isacasta@gmail.com que corresponde a un usuario existente que posee un método de pago y  que la conexión con la API de mercado pago no pudo realizarse,
+Cuando se presiona 'Eliminar método' y selecciona MercadoPago,
+Entonces el sistema informa 'Error. No se ha podido establecer la conexión. Intente más tarde'. 
+
+````
+### ID: Cancelar anotación en lista
+### Título:
+**como** usuario 
+**quiero** quiero eliminar anotación en lista de espera
+**para** organizar mi agenda
+
+### Reglas de Negocio:
+
+### Criterios de Aceptación:
+
+Escenario 1: Eliminación exitosa
+````
+- Dada la actividad 'Futbol 5' que posee cupo lleno y un correo isacasta@gmail.com que corresponde a un usuario existente en lista de espera, 
+Cuando se presiona 'Dar de baja'
+Entonces el sistema quita al usuario de la cola e informa la baja.
+
+````
+
+### ID: Registrar pago
+### Título:
+**como** usuario 
+**quiero** quiero pagar mi reserva
+**para** hacer efectiva la misma
+
+### Reglas de Negocio:
+
+### Criterios de Aceptación:
+
+Escenario 1: Pago exitoso
+````
+Dado que la conexión con la API de mercado pago es exitosa 
+Cuando el cliente seleccione "Inscribirse"
+Entonces el sistema espera respuesta de MercadoPago, recibe la confirmación de que el pago se realizó correctamente y retorna a la página de reservas e informa que la operación se realizó correctamente.
+
+````
+Escenario 2: Pago fallido
+````
+Dado que la conexión con la API de mercado pago es exitosa 
+Cuando el cliente seleccione "Inscribirse"
+Entonces el sistema espera respuesta de MercadoPago, recibe la confirmación de que el pago no pudo realizarse, retorna a la página de reservas e informa que la operación no se realizó correctamente.
+
+````
+Escenario 3: Pago fallido por error en la conexión con MercadoPago
+````
+Dado que la conexión con la API de mercado pago no pudo realizarse
+Cuando el cliente seleccione "Inscribirse"
+Entonces el sistema rechaza la operación e informa 'Error en el pago. No se ha podido establecer la conexión. Intente más tarde'.
+
+````
 
 
 
