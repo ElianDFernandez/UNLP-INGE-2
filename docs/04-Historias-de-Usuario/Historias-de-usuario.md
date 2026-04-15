@@ -71,7 +71,7 @@ Escenario 4: Cancelación exitosa sin antelación y pérdida de beneficio
 ````
 - Dado el usuario isacasta@gmail.com que cuenta con una reserva abonada activa con fecha de inicio 16/04/2026, y que dicho dia es posterior al dia de hoy 15/04/2026 con menos de 48 horas de diferencia y que cuenta con 2 cancelaciones previas en el mes,
 Cuando se presiona 'Cancelar reserva' y confirma la operación,
-Entonces el sistema cancela la reserva, informa que la reserva fue cancelada y la pérdida del descuento, el turno pasa a estar disponible y envia una notificación al primero de la lista de espera.
+Entonces el sistema cancela la reserva, informa que la reserva fue cancelada y la pérdida del descuento, el turno pasa a estar disponible y envia una notificación al primero de la lista de espera. (setea el contador en 0? )
 ````
 
 ### ID: Cancelar reserva a clase individual
