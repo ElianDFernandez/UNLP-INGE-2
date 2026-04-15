@@ -33,6 +33,7 @@
 - RF-24: Registrar cobro manual.
 - RF-25: Registrar pago.
 - RF-26: Registrar asistencia mediante escaneo de código QR.
+- RF-28: Eliminar medio de pago. 
 
 ## Vladimir
 - RF-27: Consultar panel de métricas.
