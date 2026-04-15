@@ -267,7 +267,6 @@ Entonces el sistema muestra un mensaje indicando que no hay turnos disponibles p
 - si cancela con 48 horas o más de anticipación se genera un crédito
 - si cancela con menos tiempo pierde el turno
 - si acumula tres cancelaciones en el mes pierde el beneficio del 20% de descuento sobre el abono de las clases
-- Regla 2: Para no abonados si cancela con 24 horas o más se devuelve la seña,si cancela con menos tiempo pierde la seña
 
 ### Criterios de Aceptación:
 Escenario 1: Cancelación exitosa con antelación sin pérdida de beneficio
@@ -412,37 +411,5 @@ Escenario 1: Eliminación exitosa
 - Dada la actividad 'Futbol 5' que posee cupo lleno y un correo isacasta@gmail.com que corresponde a un usuario existente en lista de espera, 
 Cuando se presiona 'Dar de baja'
 Entonces el sistema quita al usuario de la cola e informa la baja.
-
-````
-
-### ID: Registrar pago
-### Título:
-**como** usuario 
-**quiero** quiero pagar mi reserva
-**para** hacer efectiva la misma
-
-### Reglas de Negocio:
-
-### Criterios de Aceptación:
-
-Escenario 1: Pago exitoso
-````
-Dado que la conexión con la API de mercado pago es exitosa 
-Cuando el cliente seleccione "Inscribirse"
-Entonces el sistema espera respuesta de MercadoPago, recibe la confirmación de que el pago se realizó correctamente y retorna a la página de reservas e informa que la operación se realizó correctamente.
-
-````
-Escenario 2: Pago fallido
-````
-Dado que la conexión con la API de mercado pago es exitosa 
-Cuando el cliente seleccione "Inscribirse"
-Entonces el sistema espera respuesta de MercadoPago, recibe la confirmación de que el pago no pudo realizarse, retorna a la página de reservas e informa que la operación no se realizó correctamente.
-
-````
-Escenario 3: Pago fallido por error en la conexión con MercadoPago
-````
-Dado que la conexión con la API de mercado pago no pudo realizarse
-Cuando el cliente seleccione "Inscribirse"
-Entonces el sistema rechaza la operación e informa 'Error en el pago. No se ha podido establecer la conexión. Intente más tarde'.
 
 ````
