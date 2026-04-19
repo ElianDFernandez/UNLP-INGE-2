@@ -423,6 +423,3 @@ Entonces el sistema denega la acción y muestra un mensaje de alerta: "Operació
 ````
 
 
-
-
-
