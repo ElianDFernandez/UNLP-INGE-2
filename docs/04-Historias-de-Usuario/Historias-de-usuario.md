@@ -483,6 +483,8 @@ Escenario 4: Modificacion de datos fallida por cancelacion de la operacion
 
 ### Reglas de Negocio:
 
+- Se aplica un descuento del 20% al monto total para socios abonados que mantengan el beneficio vigente. 
+
 ### Criterios de Aceptación:
 ````
 Escenario 1: Baja de empleado exitosa 
