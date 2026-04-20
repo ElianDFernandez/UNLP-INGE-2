@@ -45,14 +45,11 @@
 - RF-37: Modificar datos del personal.
 - RF-38: Dar de baja al personal.
 #### 3.2.9 Gestión de Roles y Permisos
-- RF-39: Consultar listado de roles.
-- RF-40: Crear rol.
-- RF-41: Modificar rol.
-- RF-42: Eliminar rol.
-- RF-43: Asignar rol a un empleado.
-- RF-44: Asignar permisos a un rol.
+- RF-39: Consultar actividades asignadas a un empleado.
+- RF-40: Asignar actividad a un empleado.
+- RF-42: Eliminar actividad asignada a un empleado.
 #### 3.2.10 Gestión de Asistencia
-- RF-45: Registrar asistencia mediante escaneo de código QR.
-- RF-46: Registrar asistencia manualmente.
+- RF-43: Registrar asistencia mediante escaneo de código QR.
+- RF-44: Registrar asistencia manualmente.
 #### 3.2.11 Métricas
-- RF-47: Consultar panel de métricas.
+- RF-45: Consultar panel de métricas.

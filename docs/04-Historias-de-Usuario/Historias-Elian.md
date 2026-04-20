@@ -274,155 +274,57 @@ cuando intenta reservar,
 entonces el sistema muestra un mensaje indicando que no hay turnos disponibles para la actividad seleccionada.
 ````
 
-## ID: Consultar listado de roles
+## ID: Consultar actividades asignadas a un empleado
 ### Título:
 **como** administrador
-**quiero** consultar el listado de roles
-**para** visualizar y gestionar los roles existentes en el sistema.
+**quiero** consultar el listado de actividades asignadas a un empleado
+**para** consultar sus responsabilidades
 
 ### Reglas de Negocio
 
 ### Criterios de Aceptación:
-Escenario 1: Consulta exitosa de roles
+Escenario 1: Consulta exitosa de actividades
 ````
-- Dado un usuario con permisos de administrador,
-Cuando accede a la sección de gestión de roles,
-Entonces el sistema muestra el listado de roles existentes.
-````
-Escenario 2: Sin roles registrados  
-````
-- Dado un usuario con permisos de administrador,
-Cuando accede a la sección de gestión de roles y no hay roles registrados,
-Entonces el sistema muestra un mensaje indicando que no existen roles registrados.
+- Dado un usuario con permisos de administrador, y un correo "luis.fernandez@mail.com" que corresponde a un empleado con actividades asignadas,
+Cuando presiona "ver actividades asingadas",
+Entonces el sistema muestra el listado de acitivades asignadas al empleado.
 ````
 
-## ID: Crear rol
+Escenario 2: Consulta sin actividades asignadas
+````
+- Dado un usuario con permisos de administrador, y un correo "ana.torres@example.com" que corresponde a un emplado sin activades asignadas,
+Cuando presionar "ver actividades asingadas" sobre el empleado,
+Entonces el sistema muestra un mensaje indicando que no hay actividades asignadas para el empleado.
+````
+
+## ID: Asignar actividad a un empleado
 ### Título:
-**como** administrador  
-**quiero** crear un nuevo rol  
-**para** asignar diferentes permisos a los usuarios según sus funciones.
+**como** administrador
+**quiero** asignar una actividad a un empleado
+**para** darle la responsabilidad de gestionarla
 
 ### Reglas de Negocio
-- Regla 1: El nombre del rol debe ser único.
 
 ### Criterios de Aceptación:
-Escenario 1: Creación exitosa de rol  
+Escenario 1: Asignacion de actividad exitosa
 ````
-- Dado un nombre de rol único "Canchero",
-Cuando el administrador completa el formulario de creación y lo envía,
-Entonces el sistema crea el nuevo rol y muestra un mensaje de confirmación.
-````
-Escenario 2: Nombre de rol ya existente  
-````
-- Dado un nombre de rol "Administrador" que ya existe,
-Cuando el administrador intenta crear un nuevo rol con ese nombre,
-Entonces el sistema muestra un mensaje de error indicando que el nombre ya está en uso.
-````
-Escenario 3: Campos obligatorios vacíos  
-````
-- Dado un formulario de creación de rol con campos vacíos,
-Cuando el administrador intenta crear el rol,
-Entonces el sistema muestra un mensaje de error indicando que los campos obligatorios están vacíos.
+- Dado un usuario con permisos de administrador, y un correo "luis.fernandez@mail.com" que corresponde a un empleado,
+Cuando presiona "editar actividades" sobre el empleado, presiona una actividad y guarda
+Entonces el sistema asigna la actividad al empleado.
 ````
 
-## ID: Modificar rol
+## ID: Eliminar actividad asignada a un empleado
 ### Título:
-**como** administrador  
-**quiero** modificar un rol existente  
-**para** actualizar su nombre o sus permisos.
-
-### Reglas de Negocio
-- Regla 1: El nombre del rol debe ser único.
-
-### Criterios de Aceptación:
-Escenario 1: Modificación exitosa de rol
-````
-- Dado un rol existente "Recepcionista",
-Cuando el administrador modifica su nombre a "Recepción" y guarda los cambios,
-Entonces el sistema actualiza el rol y muestra un mensaje de confirmación.
-````
-Escenario 2: Nombre de rol ya existente
-````
-- Dado un rol existente "Recepcionista",
-Cuando el administrador intenta cambiar su nombre a "Administrador" que ya existe,
-Entonces el sistema muestra un mensaje de error indicando que el nombre ya está en uso.
-````
-Escenario 3: Campos obligatorios vacíos
-````
-- Dado un formulario de edición de rol con campos vacíos,
-Cuando el administrador intenta guardar los cambios,
-Entonces el sistema muestra un mensaje de error indicando que los campos obligatorios están vacíos.
-````
-
-## ID: Eliminar rol
-### Título:
-**como** administrador  
-**quiero** eliminar un rol  
-**para** mantener actualizado el listado de roles del sistema.
-
-### Reglas de Negocio
-- Regla 1: No se puede eliminar un rol que esté asignado a usuarios.
-
-### Criterios de Aceptación:
-Escenario 1: Eliminación exitosa de rol
-````
-- Dado un rol "Recepcionista" que no está asignado a ningún usuario,
-Cuando el administrador selecciona eliminar el rol,
-Entonces el sistema elimina el rol y muestra un mensaje de confirmación.
-````
-Escenario 2: Rol asignado a usuarios  
-````
-- Dado un rol "Canchero" que está asignado a uno o más usuarios,
-Cuando el administrador intenta eliminar el rol,
-Entonces el sistema muestra un mensaje de error indicando que el rol no puede eliminarse porque está asignado a usuarios.
-````
-
-## ID: Asignar rol a un empleado
-### Título:
-**como** administrador  
-**quiero** asignar un rol a un empleado  
-**para** definir sus permisos y funciones en el sistema.
+**como** administrador
+**quiero** eliminar una actividad a un empleado
+**para** quitarles la responsabilidad de gestionarla
 
 ### Reglas de Negocio
 
 ### Criterios de Aceptación:
-Escenario 1: Asignación exitosa de rol  
+Escenario 1: Eliminacion de actividad exitosa
 ````
-- Dado un empleado "Juan Perez" y un rol "Canchero" que no tiene asignado,
-Cuando el administrador selecciona el empleado y le asigna el rol,
-Entonces el sistema actualiza el rol del empleado y muestra un mensaje de confirmación.
-````
-Escenario 2: Empleado ya tiene el rol  
-````
-- Dado un empleado "Juan Perez" que ya tiene el rol "Canchero" asignado,
-Cuando el administrador intenta asignarle el mismo rol,
-Entonces el sistema muestra un mensaje indicando que el empleado ya tiene ese rol.
-````
-Escenario 3: Campos obligatorios vacíos  
-````
-- Dado un formulario de asignación de rol con campos vacíos,
-Cuando el administrador intenta asignar el rol,
-Entonces el sistema muestra un mensaje de error indicando que los campos obligatorios están vacíos.
-````
-
-## ID: Asignar permisos a un rol
-### Título:
-**como** administrador  
-**quiero** asignar permisos a un rol  
-**para** controlar las acciones que pueden realizar los usuarios con ese rol.
-
-### Reglas de Negocio
-
-### Criterios de Aceptación:
-Escenario 1: Asignación exitosa de permisos  
-````
-- Dado un rol "Administrador" y una lista de permisos seleccionados,
-Cuando el administrador guarda los cambios,
-Entonces el sistema actualiza los permisos del rol y muestra un mensaje de confirmación.
-````
-Escenario 2: Sin permisos seleccionados  
-````
-- Dado un rol "Administrador" y ningún permiso seleccionado,
-Cuando el administrador intenta guardar los cambios,
-Entonces el sistema muestra un mensaje de error indicando que debe seleccionar al menos un permiso.
+- Dado un usuario con permisos de administrador, y un correo "luis.fernandez@mail.com" que corresponde a un empleado con la actividad "futbol" asignada
+Cuando presiona "editar actividades" sobre el empleado, presiona la actividad "futbol" y guarda
+Entonces el sistema revoca la actividad presionada del empleado.
 ````
