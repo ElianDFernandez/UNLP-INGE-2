@@ -105,9 +105,9 @@ Entonces el sistema muestra un mensaje de error indicando que los campos obligat
 ### Criterios de Aceptación:
 Escenario 1: Cierre de sesión exitoso
 ````
-- Dado un usuario "Ana Torres" con una sesion activa en el sistema,
-Cuando el usuario hace clic en el botón de cerrar sesión,
-Entonces el sistema cierra la sesión del usuario y lo redirige a la página de inicio de sesión.
+- Dado que un usuario con mail "ana.torres@example.com" tiene una sesión activa en el sistema,
+cuando hace clic en el botón de cerrar sesión,
+entonces el sistema cierra la sesión y lo redirige a la página de inicio de sesión.
 ````
 
 ## ID: Recuperar Contraseña
@@ -121,21 +121,21 @@ Entonces el sistema cierra la sesión del usuario y lo redirige a la página de 
 ### Criterios de Aceptación:
 Escenario 1: Solicitud de recuperación de contraseña exitosa
 ````
-- Dado un usuario "Luis Fernandez" que ha olvidado su contraseña,
-Cuando el usuario selecciona la opción de "Olvidé mi contraseña" e ingresa su email registrado "luisFernandez@mail.com",
-Entonces el sistema envía un correo electrónico con instrucciones para restablecer la contraseña.
+- Dado que un usuario con mail "luisfernandez@mail.com" ha olvidado su contraseña,
+cuando selecciona la opción "Olvidé mi contraseña" e ingresa su email registrado,
+entonces el sistema envía un correo electrónico con instrucciones para restablecer la contraseña.
 ````
 Escenario 2: Email no registrado
 ````
-- Dado un usuario "Sofia Ramirez" que ha olvidado su contraseña,
-Cuando el usuario selecciona la opción de "Olvidé mi contraseña" e ingresa un email no registrado "sofiaRamirez@mail.com",
-Entonces el sistema muestra un mensaje de error indicando que el email no está registrado.
+- Dado que un usuario con mail "sofiaramirez@mail.com" ha olvidado su contraseña,
+cuando selecciona la opción "Olvidé mi contraseña" e ingresa un email no registrado,
+entonces el sistema muestra un mensaje de error indicando que el email no está registrado.
 ````
 Escenario 3: Formato de email inválido
 ````
-- Dado un usuario "Miguel Sanchez" que ha olvidado su contraseña,
-Cuando el usuario selecciona la opción de "Olvidé mi contraseña" e ingresa un email con formato inválido "miguelSanchezmail.com" 
-Entonces el sistema muestra un mensaje de error indicando que el formato del email es inválido.
+- Dado que un usuario con mail "miguelsanchezmail.com" ha olvidado su contraseña,
+cuando selecciona la opción "Olvidé mi contraseña" e ingresa un email con formato inválido "miguelsanchezmail.com",
+entonces el sistema muestra un mensaje de error indicando que el formato del email es inválido.
 ````
 
 ## ID: Modificar Contraseña
@@ -150,27 +150,27 @@ Entonces el sistema muestra un mensaje de error indicando que el formato del ema
 ### Criterios de Aceptación:
 Escenario 1: Modificación de contraseña exitosa
 ````
-- Dado un usuario "Laura Sanchez" con una sesión activa en el sistema, y una contraseña actual "Password123",
-Cuando el usuario accede a la sección de modificar contraseña, ingresa su contraseña actual "Password123" y una nueva contraseña "NewPassword123" que cumple con los requisitos y hace clic en guardar,
-Entonces el sistema actualiza la contraseña del usuario y muestra un mensaje de confirmación.
-````    
+- Dado que un usuario con mail "laura.sanchez@example.com" tiene sesión activa y su contraseña actual es "Password123",
+cuando accede a la sección de modificar contraseña, ingresa la contraseña actual y una nueva contraseña válida "NewPassword123" y guarda,
+entonces el sistema actualiza la contraseña y muestra un mensaje de confirmación.
+````
 Escenario 2: Contraseña actual incorrecta
 ````
-- Dado un usuario "Carlos Gomez" con una sesión activa en el sistema, y una contraseña actual "Password123",
-Cuando el usuario accede a la sección de modificar contraseña, ingresa una contraseña actual incorrecta "PasswordError" y una nueva contraseña "NewPassword123" que cumple con los requisitos y hace clic en guardar,
-Entonces el sistema muestra un mensaje de error indicando que la contraseña actual es incorrecta.
+- Dado que un usuario con mail "carlosgomez@mail.com" tiene sesión activa y su contraseña actual es "Password123",
+cuando accede a la sección de modificar contraseña, ingresa una contraseña actual incorrecta "PasswordError" y una nueva contraseña válida "NewPassword123" y guarda,
+entonces el sistema muestra un mensaje de error indicando que la contraseña actual es incorrecta.
 ````
 Escenario 3: Nueva contraseña no cumple requisitos
 ````
-- Dado un usuario "Ana Torres" con una sesión activa en el sistema, y una contraseña actual "Password123",
-Cuando el usuario accede a la sección de modificar contraseña, ingresa su contraseña actual "Password123" y una nueva contraseña "password" que no cumple con los requisitos y hace clic en guardar,
-Entonces el sistema muestra un mensaje de error indicando que la nueva contraseña no cumple con los requisitos.
+- Dado que un usuario con mail "ana.torres@example.com" tiene sesión activa y su contraseña actual es "Password123",
+cuando accede a la sección de modificar contraseña, ingresa la contraseña actual y una nueva contraseña inválida "password" y guarda,
+entonces el sistema muestra un mensaje de error indicando que la nueva contraseña no cumple con los requisitos.
 ````
 Escenario 4: Campos obligatorios vacíos
 ````
-- Dado un usuario "Luis Fernandez" con una sesión activa en el sistema, y una contraseña actual "Password123",
-Cuando el usuario accede a la sección de modificar contraseña, deja vacíos los campos de contraseña actual y nueva contraseña, y hace clic en guardar,
-Entonces el sistema muestra un mensaje de error indicando que los campos obligatorios están vacíos.
+- Dado que un usuario con mail "luisfernandez@mail.com" tiene sesión activa y su contraseña actual es "Password123",
+cuando accede a la sección de modificar contraseña y deja vacíos los campos de contraseña actual y nueva contraseña y guarda,
+entonces el sistema muestra un mensaje de error indicando que los campos obligatorios están vacíos.
 ````
 
 ## ID: Ver Perfil de Usuario
@@ -184,9 +184,9 @@ Entonces el sistema muestra un mensaje de error indicando que los campos obligat
 ### Criterios de Aceptación:
 Escenario 1: Visualización de perfil exitosa
 ````
-- Dado un usuario "Miguel Sanchez" con una sesión activa en el sistema,
-Cuando el usuario accede a la sección de perfil de usuario,
-Entonces el sistema muestra la información del perfil del usuario.
+- Dado que un usuario con mail "miguel.sanchez@example.com" tiene sesión activa,
+cuando accede a la sección de perfil de usuario,
+entonces el sistema muestra la información del perfil del usuario.
 ````
 
 ## ID: Editar Perfil de Usuario
@@ -201,27 +201,27 @@ Entonces el sistema muestra la información del perfil del usuario.
 ### Criterios de Aceptación:
 Escenario 1: Edición de perfil exitosa
 ````
-- Dado un usuario "Sofia Ramirez" con una sesión activa en el sistema, y una información de perfil actual con nombre "Sofia Ramirez" y email "sofia.ramirez@example.com",
-Cuando el usuario accede a la sección de editar perfil, ingresa su nombre a "Sofia R. Ramirez" y su email a "sofia.ramirez2@example.com", y hace clic en guardar,
-Entonces el sistema actualiza la información del perfil del usuario y muestra un mensaje de confirmación.
+- Dado que un usuario con mail "sofia.ramirez@example.com" tiene sesión activa y su nombre de usuario actual es "Sofia Ramirez",
+cuando accede a editar perfil, ingresa nombre "Sofia R. Ramirez" y email "sofia.ramirez2@example.com" y guarda,
+entonces el sistema actualiza la información y muestra un mensaje de confirmación.
 ````
 Escenario 2: Email ya registrado
 ````
-- Dado un usuario "Luis Fernandez" con una sesión activa en el sistema, y una información de perfil actual con nombre "Luis Fernandez" y email "luis.fernandez@example.com",
-Cuando el usuario accede a la sección de editar perfil, ingresa un email ya registrado "sofia.ramirez@example.com", y hace clic en guardar,
-Entonces el sistema muestra un mensaje de error indicando que el email ya está en uso.
+- Dado que un usuario con mail "luis.fernandez@example.com" tiene sesión activa y su nombre de usuario actual es "Luis Fernandez",
+cuando accede a editar perfil, ingresa un email ya registrado "sofia.ramirez@example.com" y guarda,
+entonces el sistema muestra un mensaje de error indicando que el email ya está en uso.
 ````
 Escenario 3: Campos obligatorios vacíos
 ````
-- Dado un usuario "Ana Torres" con una sesión activa en el sistema, y una información de perfil actual con nombre "Ana Torres" y email "ana.torres@example.com",
-Cuando el usuario accede a la sección de editar perfil, deja vacíos los campos de nombre y email, y hace clic en guardar,
-Entonces el sistema muestra un mensaje de error indicando que los campos obligatorios están vacíos.
+- Dado que un usuario con mail "ana.torres@example.com" tiene sesión activa y su nombre de usuario actual es "Ana Torres",
+cuando accede a editar perfil, deja vacíos los campos de nombre y email y guarda,
+entonces el sistema muestra un mensaje de error indicando que los campos obligatorios están vacíos.
 ````
 Escenario 4: Formato de email inválido
 ````
-- Dado un usuario "Carlos Gomez" con una sesión activa en el sistema, y una información de perfil actual con nombre "Carlos Gomez" y email "carlosGomez@mail.com",
-Cuando el usuario accede a la sección de editar perfil, ingresa un email con formato inválido "carlosGomezmail.com", y hace clic en guardar,
-Entonces el sistema muestra un mensaje de error indicando que el formato del email es inválido.
+- Dado que un usuario con mail "carlosgomez@mail.com" tiene sesión activa y su nombre de usuario actual es "Carlos Gomez",
+cuando accede a editar perfil, ingresa un email con formato inválido "carlosGomezmail.com" y guarda,
+entonces el sistema muestra un mensaje de error indicando que el formato del email es inválido.
 ````
 
 ## ID: Consultar mis actividades y clases reservadas
@@ -235,15 +235,15 @@ Entonces el sistema muestra un mensaje de error indicando que el formato del ema
 ### Criterios de Aceptación:
 Escenario 1: Consulta de actividades y clases reservadas exitosa
 ````
-- Dado un usuario "Ana Torres" con una sesión activa en el sistema, y con reservas de actividades y clases próximas,
-Cuando el usuario accede a la sección de "Mis Actividades y Clases Reservadas",
-Entonces el sistema muestra la lista de sus actividades y clases reservadas próximas.
+- Dado que un usuario con mail "ana.torres@example.com" tiene sesión activa y reservas próximas de actividades y clases,
+cuando accede a la sección de "Mis Actividades y Clases Reservadas",
+entonces el sistema muestra la lista de actividades y clases reservadas próximas.
 ````
 Escenario 2: Sin actividades o clases reservadas
 ````
-- Dado un usuario "Luis Fernandez" con una sesión activa en el sistema, y sin reservas de actividades o clases próximas,
-Cuando el usuario accede a la sección de "Mis Actividades y Clases Reservadas",
-Entonces el sistema muestra un mensaje indicando que no tiene actividades o clases reservadas próximas.
+- Dado que un usuario con mail "luisfernandez@mail.com" tiene sesión activa y no tiene reservas próximas de actividades o clases,
+cuando accede a la sección de "Mis Actividades y Clases Reservadas",
+entonces el sistema muestra un mensaje indicando que no tiene actividades o clases reservadas próximas.
 ````
 
 ## ID: Consultar turnos de actividades disponibles para reservar
@@ -257,19 +257,21 @@ Entonces el sistema muestra un mensaje indicando que no tiene actividades o clas
 ### Criterios de Aceptación:
 Escenario 1: Consultar turnos de actividades disponibles para reservar exitosa
 ````
-- Dado un usuario "Carlos Gomez" con una sesión activa en el sistema,
-Cuando el usuario accede a la sección de "Actividades Disponibles para Reservar" y selecciona una actividad,
-Entonces el sistema muestra el listado de turnos de la actividad seleccionada disponibles para reservar.
+- Dado que un usuario con mail "carlosgomez@mail.com" tiene sesión activa,
+cuando accede a la sección de "Actividades Disponibles para Reservar" y selecciona una actividad,
+entonces el sistema muestra el listado de turnos de la actividad seleccionada disponibles para reservar.
 ````
 Escenario 2: Sin actividades disponibles para reservar
 ````
-- Dado un usuario "Sofia Ramirez" con una sesión activa en el sistema,
-Cuando el usuario accede a la sección de "Actividades Disponibles para Reservar" y no hay actividades disponibles para reservar,
-Entonces el sistema muestra un mensaje indicando que no hay actividades disponibles para reservar.
+- Dado que un usuario con mail "sofia.ramirez@example.com" tiene sesión activa,
+cuando accede a la sección de "Actividades Disponibles para Reservar" y no hay actividades disponibles,
+entonces el sistema muestra un mensaje indicando que no hay actividades disponibles para reservar.
 ````
+Escenario 3: Sin turnos disponibles para reservar
 ````
-Cuando el usuario accede a la sección de "Actividades Disponibles para Reservar", selecciona una actividad, y no hay turnos disponibles para reservar,
-Entonces el sistema muestra un mensaje indicando que no hay turnos disponibles para reservar para la actividad seleccionada.
+Dado que un usuario accede a la sección de "Actividades Disponibles para Reservar", selecciona una actividad y no hay turnos disponibles,
+cuando intenta reservar,
+entonces el sistema muestra un mensaje indicando que no hay turnos disponibles para la actividad seleccionada.
 ````
 
 ## ID: Consultar listado de roles
