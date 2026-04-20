@@ -46,18 +46,6 @@ Escenario 3: Contraseña no cumple requisitos
 Cuando el cliente completa el formulario de registro y lo envía
 Entonces el sistema muestra un mensaje de error indicando que la contraseña no cumple con los requisitos.
 ````
-Escenario 4: Campos obligatorios vacíos
-````
-- Dado un nombre de usuario vacio, un email "carlosGomez@mail.com", el cual no se encuentra registrado, y una contraseña "Password123", 
-Cuando el cliente completa el formulario de registro y lo envía,
-Entonces el sistema muestra un mensaje de error indicando que los campos obligatorios están vacíos.
-````
-Escenario 5: Formato de email inválido
-````
-- Dado un nombre de usuario "Laura Sanchez", un email "lauraSanchezmail.com", el cual no se encuentra registrado, y una contraseña "Password123",
-Cuando el cliente completa el formulario de registro y lo envía,
-Entonces el sistema muestra un mensaje de error indicando que el formato del email es inválido.
-````
 
 ## ID: Iniciar Sesión 
 ### Título:  
@@ -85,12 +73,6 @@ Escenario 3: Email no registrado
 - Dado un email "juanPerez@mail.com", el cual no se encuentra registrado, y una contraseña "Password123", 
 Cuando el cliente intenta iniciar sesión con este email, 
 Entonces el sistema muestra un mensaje de error indicando que el email no está registrado.
-````
-Escenario 4: Campos obligatorios vacíos
-````
-- Dado un email vacio, y una contraseña "Password123",
-Cuando el cliente intenta iniciar sesión sin ingresar un email,
-Entonces el sistema muestra un mensaje de error indicando que los campos obligatorios están vacíos.
 ````
 
 
@@ -131,12 +113,6 @@ Escenario 2: Email no registrado
 cuando selecciona la opción "Olvidé mi contraseña" e ingresa un email no registrado,
 entonces el sistema muestra un mensaje de error indicando que el email no está registrado.
 ````
-Escenario 3: Formato de email inválido
-````
-- Dado que un usuario con mail "miguelsanchezmail.com" ha olvidado su contraseña,
-cuando selecciona la opción "Olvidé mi contraseña" e ingresa un email con formato inválido "miguelsanchezmail.com",
-entonces el sistema muestra un mensaje de error indicando que el formato del email es inválido.
-````
 
 ## ID: Modificar Contraseña
 ### Título:
@@ -165,12 +141,6 @@ Escenario 3: Nueva contraseña no cumple requisitos
 - Dado que un usuario con mail "ana.torres@example.com" tiene sesión activa y su contraseña actual es "Password123",
 cuando accede a la sección de modificar contraseña, ingresa la contraseña actual y una nueva contraseña inválida "password" y guarda,
 entonces el sistema muestra un mensaje de error indicando que la nueva contraseña no cumple con los requisitos.
-````
-Escenario 4: Campos obligatorios vacíos
-````
-- Dado que un usuario con mail "luisfernandez@mail.com" tiene sesión activa y su contraseña actual es "Password123",
-cuando accede a la sección de modificar contraseña y deja vacíos los campos de contraseña actual y nueva contraseña y guarda,
-entonces el sistema muestra un mensaje de error indicando que los campos obligatorios están vacíos.
 ````
 
 ## ID: Ver Perfil de Usuario
@@ -207,21 +177,9 @@ entonces el sistema actualiza la información y muestra un mensaje de confirmaci
 ````
 Escenario 2: Email ya registrado
 ````
-- Dado que un usuario con mail "luis.fernandez@example.com" tiene sesión activa y su nombre de usuario actual es "Luis Fernandez",
-cuando accede a editar perfil, ingresa un email ya registrado "sofia.ramirez@example.com" y guarda,
+- Dado que un usuario con mail "luis.fernandez@example.com" tiene sesión activa y su nombre de usuario actual es "Luis Fernandez",  y un email ya registrado "sofia.ramirez@example.com"  
+cuando accede a editar perfil, ingresa el email "sofia.ramirez@example.com" y guarda,  
 entonces el sistema muestra un mensaje de error indicando que el email ya está en uso.
-````
-Escenario 3: Campos obligatorios vacíos
-````
-- Dado que un usuario con mail "ana.torres@example.com" tiene sesión activa y su nombre de usuario actual es "Ana Torres",
-cuando accede a editar perfil, deja vacíos los campos de nombre y email y guarda,
-entonces el sistema muestra un mensaje de error indicando que los campos obligatorios están vacíos.
-````
-Escenario 4: Formato de email inválido
-````
-- Dado que un usuario con mail "carlosgomez@mail.com" tiene sesión activa y su nombre de usuario actual es "Carlos Gomez",
-cuando accede a editar perfil, ingresa un email con formato inválido "carlosGomezmail.com" y guarda,
-entonces el sistema muestra un mensaje de error indicando que el formato del email es inválido.
 ````
 
 ## ID: Consultar mis actividades y clases reservadas
